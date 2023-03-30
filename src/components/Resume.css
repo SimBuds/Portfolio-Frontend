@@ -1,0 +1,38 @@
+.resume {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .resume h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #333;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  .resume ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .resume li {
+    margin-bottom: 10px;
+  }
+  
+  .resume .section {
+    margin-bottom: 30px;
+  }
+  
+  .resume .title {
+    font-weight: bold;
+  }
+  
+  .resume .duration,
+  .resume .location {
+    font-style: italic;
+    font-size: 14px;
+  }
+  

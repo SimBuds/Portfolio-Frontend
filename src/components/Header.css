@@ -1,0 +1,35 @@
+/* src/components/Header.css */
+.header {
+  background-color: #333;
+  padding: 1rem 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-title {
+  color: #fff;
+  margin: 0;
+}
+
+.header-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.header-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.header-nav a:hover,
+.header-nav .active {
+  background-color: #555;
+  border-radius: 0.25rem;
+}

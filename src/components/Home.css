@@ -1,0 +1,15 @@
+/* src/components/Home.css */
+.home {
+    padding: 2rem;
+  }
+  
+  .home-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .home-description {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
