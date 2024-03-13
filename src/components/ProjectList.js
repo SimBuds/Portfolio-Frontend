@@ -1,22 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import ProjectCard from './ProjectCard';
 
-const ProjectList = () => {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      const response = await fetch('https://api.github.com/users/SimBuds/repos');
-      const data = await response.json();
-      setProjects(data);
-    };
-
-    fetchProjects();
-  }, []);
-
+const ProjectList = ({ projects }) => {
   return (
-    <div className="project-list">
-      {projects.map((project) => (
+    <div>
+      {projects.map(project => (
         <ProjectCard key={project.id} project={project} />
       ))}
     </div>

@@ -1,13 +1,11 @@
 import React from 'react';
-import './Footer.css';
+import { Container } from 'react-bootstrap';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="container">
-        <p className="text-muted">&copy; {new Date().getFullYear()} Casey Hsu 2024. All rights reserved.</p>
-      </div>
-    </footer>
+    <Container fluid style={{backgroundColor: '#f8f9fa', borderTop: '1px solid #e7e7e7', textAlign: 'center', padding: '10px', position: 'fixed', left: '0', bottom: '0', width: '100%'}}>
+      <p>© 2024 Casey's Portfolio</p>
+    </Container>
   );
 };
 

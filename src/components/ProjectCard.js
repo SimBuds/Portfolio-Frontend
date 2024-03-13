@@ -1,13 +1,18 @@
 import React from 'react';
-import './ProjectCard.css';
+import { Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
-const ProjectCard = ({ name, description, repoLink }) => {
+const ProjectCard = ({ project }) => {
   return (
-    <div className="project-card">
-      <h3 className="project-card-title">{name}</h3>
-      <p className="project-card-description">{description}</p>
-      <a href={repoLink} target="_blank" rel="noopener noreferrer" className="project-card-link">View on GitHub</a>
-    </div>
+    <Card>
+      <Card.Body>
+        <Card.Title>{project.title}</Card.Title>
+        <Card.Text>{project.description}</Card.Text>
+        <Button variant="primary" as={Link} to={`/projects/${project.id}`}>
+          Go to Project
+        </Button>
+      </Card.Body>
+    </Card>
   );
 };
 

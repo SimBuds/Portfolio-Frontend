@@ -1,39 +1,19 @@
 import React from 'react';
-import ProjectCard from '../components/ProjectCard';
-import './Projects.css';
-
-const projectData = [
-  {
-    id: 1,
-    name: 'Project 1',
-    description: 'This is a description of Project 1.',
-    repoLink: 'https://github.com/SimBuds/TicTacToe-MiniMax'
-  },
-  {
-    id: 2,
-    name: 'Project 2',
-    description: 'This is a description of Project 2.',
-    repoLink: 'https://github.com/SimBuds/GT7-Racing-Program'
-  },
-  // Add more projects here
-];
+import { Container, Card, Button } from 'react-bootstrap';
 
 const Projects = () => {
-    return (
-      <div className="projects">
-        <h2 className="projects-title">My Projects</h2>
-        <div className="projects-grid">
-          {projectData.map(project => (
-            <ProjectCard
-              key={project.id}
-              name={project.name}
-              description={project.description}
-              repoLink={project.repoLink}
-            />
-          ))}
-        </div>
-      </div>
-    );
-  };
-  
+  return (
+    <Container>
+      <Card>
+        <Card.Body>
+          <Card.Title>Project 1</Card.Title>
+          <Card.Text>Description of Project 1</Card.Text>
+          <Button variant="primary" href="https://github.com/yourusername/project1">Go to Project</Button>
+        </Card.Body>
+      </Card>
+      {/* Add more Card components for other projects */}
+    </Container>
+  );
+};
+
 export default Projects;
