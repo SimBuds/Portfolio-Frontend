@@ -13,7 +13,6 @@ const Home = () => {
           </p>
         </Col>
       </Row>
-      {/* Additional content or components can be added here */}
     </Container>
   );
 };
