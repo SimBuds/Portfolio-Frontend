@@ -3,7 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 const Home = () => {
   return (
-    <Container className="py-5">
+    <Container fluid className="p-5 bg-dark text-white">
       <Row className="my-5">
         <Col md={{ span: 8, offset: 2 }}>
           <h1 className="display-4">Welcome to My Portfolio</h1>

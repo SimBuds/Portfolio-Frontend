@@ -3,7 +3,7 @@ import { Container, Form, Button, Row, Col } from 'react-bootstrap';
 
 const Contact = () => {
   return (
-    <Container className="d-flex justify-content-center align-items-center text-white" style={{ minHeight: '80vh' }}>
+    <Container fluid className="d-flex justify-content-center bg-dark align-items-center text-white" style={{ minHeight: '80vh' }}>
       <Row className="w-100">
         <Col md={{ span: 6, offset: 3 }}>
           <Form className="p-4 rounded" style={{ backgroundColor: '#333', border: '2px solid #444' }}>

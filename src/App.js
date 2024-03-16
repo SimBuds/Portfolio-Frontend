@@ -7,6 +7,7 @@ import Cover from './pages/Cover';
 import Resume from './pages/Resume';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import './App.css';
 
 function App() {
   return (

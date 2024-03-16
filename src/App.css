@@ -5,44 +5,92 @@
   box-sizing: border-box;
 }
 
-/* Fonts */
+/* Typography */
 body {
-  font-family: 'Arial', sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #333;
+  font-family: 'Arial', sans-serif; /* Use a common font family */
+  line-height: 1.6; /* Default line height */
+  color: #212529; /* Bootstrap's default text color */
 }
 
-/* Layout */
-.App {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+/* Links */
+a {
+  color: #007bff; /* Bootstrap's default link color */
+  text-decoration: none; /* Removes underline from links */
 }
 
-/* Header */
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem;
+a:hover {
+  color: #0056b3; /* Bootstrap's default hover color for links */
+}
+
+/* Images */
+img {
+  max-width: 100%; /* Responsive images */
+  height: auto;
+}
+
+/* Utility Classes */
+.container, .container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Header and Footer */
+header, footer {
+  padding: 1rem 0; /* Default padding for header and footer */
 }
 
 /* Main Content */
 main {
-  flex-grow: 1;
-  padding: 2rem;
+  padding-top: 1rem; /* Space on top of main content */
 }
 
-/* Sections */
-section {
-  margin-bottom: 2rem;
+/* Buttons */
+button, .btn {
+  cursor: pointer; /* Ensures all buttons have a pointer cursor */
 }
 
-/* Footer (already provided in Footer.css) */
+/* Forms */
+input, textarea, select, .form-control {
+  display: block; /* Ensures form elements are full-width by default */
+  width: 100%;
+  padding: .375rem .75rem; /* Bootstrap's default form padding */
+  font-size: 1rem; /* Default font size for form elements */
+  line-height: 1.5;
+  color: #495057; /* Bootstrap's default form text color */
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da; /* Bootstrap's default form border */
+  border-radius: .25rem; /* Bootstrap's default border radius */
+}
 
-/* Utility classes */
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
+/* Helper classes */
+.text-center {
+  text-align: center; /* Center text alignment */
+}
+
+/* Responsive design */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
 }

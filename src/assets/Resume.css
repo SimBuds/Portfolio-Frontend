@@ -1,0 +1,17 @@
+.resume {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: white;
+  }
+  
+  .element {
+    margin-bottom: 20px;
+  }
+  
+  h1, h2 {
+    color: #FFF;
+  }
+  
+  p {
+    color: #DDD;
+  }
