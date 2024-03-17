@@ -19,16 +19,18 @@ const Projects = () => {
   }
 
   return (
-    <Container fluid className="p-5 bg-black text-white overflow-auto">
+    <Container className="p-5 bg-black text-white">
       <h1 className="text-center my-4">Projects</h1>
-      <Row>
+      <Row xs={1} md={2} lg={3} xl={4} className="g-4 justify-content-center">
         {projects.map(project => (
-          <Col sm={12} md={6} lg={3} key={project.id}>
-            <Card>
-              <Card.Img variant="top" src={project.owner.avatar_url} />
+          <Col key={project.id} lg={3} md={4} sm={6} className="mb-4">
+            <Card className="h-100 shadow bg-white text-black" style={{ padding: '0.5rem' }}>
+              <Card.Img variant="top" src={project.owner.avatar_url} style={{ maxHeight: '200px', objectFit: 'cover' }} />
               <Card.Body>
                 <Card.Title>{project.name}</Card.Title>
-                <Card.Text>{project.description}</Card.Text>
+                <Card.Text>
+                  {project.description || 'No description available.'}
+                </Card.Text>
                 <Button variant="primary" href={project.html_url} target="_blank">Visit Repo</Button>
               </Card.Body>
             </Card>

@@ -28,6 +28,9 @@ const Header = () => {
           <Nav.Link as={NavLink} activeClassName="active" to="/resume">Resume</Nav.Link>
         </Nav.Item>
         <Nav.Item>
+          <Nav.Link as={NavLink} activeClassName="active" to="/experience">Experience</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
           <Nav.Link as={NavLink} activeClassName="active" to="/projects">Projects</Nav.Link>
         </Nav.Item>
         <Nav.Item>

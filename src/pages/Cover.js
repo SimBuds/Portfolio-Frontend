@@ -4,27 +4,21 @@ import '../assets/Cover.css'
 
 const Cover = () => {
   return (
-    <Container fluid className="bg-black text-white py-5 cover-container">
+    <Container className="bg-black text-white py-5 cover-container">
       <Row className="justify-content-md-center">
         <Col md={8}>
-          <div className="contact-info mb-4">
-            <p>casey.hsu@georgebrown.ca</p>
-          </div>
-          <div className="recipient-info mb-4">
-            <p>Human Resources</p>
-          </div>
-          <div className="salutation mb-4">
-            <p>Dear Hiring Manager,</p>
+          <div className="header mb-4">
+            <p>Cover Page</p>
           </div>
           <div className="body mb-4">
-            <p>I am writing to express my interest in the Software Developer role, as advertised. As an experienced developer with a passion for programming and a dedication to producing high-quality code, I believe that I would be a valuable addition to your team.</p>
-            <p>With my technical background and proficiency in programming languages such as Java, C#, Python, ASP.NET, JavaScript, Rust and React, I have gained extensive knowledge and experience in developing robust, scalable, and maintainable applications. I have experience working in a collaborative team environment, where I have contributed to developing and testing new features, troubleshooting and debugging issues, and delivering solutions within tight deadlines.</p>
-            <p>In addition to my technical expertise, I am a proactive and detail-oriented individual who is committed to delivering work of the highest quality. I am experienced in working with different project management methodologies, such as Agile and Waterfall, and have excellent communication and interpersonal skills. As a self-starter, I am always looking for ways to improve my skills and knowledge in order to stay up to date with the latest technologies and trends.</p>
-            <p>I am excited about the opportunity to bring my skills and experience to the Software Developer role at your business. Thank you for considering my application. I have attached my resume for your review, and I look forward to the opportunity to further discuss my qualifications with you.</p>
-          </div>
+            <p>I'm thrilled to share my journey as a Software Developer with you. With a strong passion for programming and a commitment to crafting high-quality code.</p>
+            <p>My technical toolkit includes programming languages such as Java, C#, Python, ASP.NET, JavaScript, Rust, and React. This diverse skill will equipped me with the knowledge and experience necessary for my future Software Developer career. I thrive in collaborative environments, contributing to team efforts by developing new features, troubleshooting and debugging issues, and delivering solutions that meet standards.</p>
+            <p>Beyond my technical capabilities, I pride myself on being proactive and detail-oriented, always striving to deliver work that exceeds expectations. I'm a constant learner, eager to stay current with the latest technologies and trends to enhance my skills.</p>
+            <p>I'm excited to showcase my projects and experiences through this portfolio. It's a collection of school work and hobbies that have interested me so far. Feel free to reach out if you're interested in learning more about my journey or discussing potential collaborations. Thank you for visiting!</p>
+        </div>
           <div className="closing mb-4">
-            <p>Sincerely,</p>
-            <p>Casey Hsu</p>
+            <p>Sincerely, Casey Hsu</p>
+            <p>casey.hsu@georgebrown.ca</p>
           </div>
         </Col>
       </Row>

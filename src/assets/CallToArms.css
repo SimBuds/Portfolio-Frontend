@@ -1,0 +1,26 @@
+.call-to-arms {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.call-to-arms .cta-box {
+  padding: 2rem;
+  border: 1px solid white;
+  flex: 1; /* Adjust this */
+  margin: 1rem;
+}
+
+
+@media (min-width: 992px) {
+  .call-to-arms .cta-box {
+    margin-bottom: 0;
+  }
+}
+
+.call-to-arms .btn {
+  border-color: white;
+}

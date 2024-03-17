@@ -1,6 +1,46 @@
+/* General body styles */
+body {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styling */
 .cover-container {
-    min-height: 100vh; /* 100% of the viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center content vertically */
+  max-width: 100%;
+  padding: 2rem 0;
+  background-color: #333;
+}
+
+/* Header styles */
+.header p {
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 0 1rem 0;
+  color: #f8f9fa;
+}
+
+/* Body text styles */
+.body p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Styling for closing section */
+.closing p {
+  font-size: 1rem;
+  text-align: center;
+  color: #6c757d;
+  margin: 0.5rem 0;
+}
+
+/* Column styling for responsiveness */
+@media (max-width: 768px) {
+  .col-md-8 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }

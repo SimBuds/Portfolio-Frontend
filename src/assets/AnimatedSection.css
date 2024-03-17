@@ -1,0 +1,84 @@
+.animated-section {
+  background-color: black;
+  color: white;
+  padding: 50px 0;
+  min-height: 500px;
+}
+  
+.text-section {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.text-section.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.text-section.slide-in {
+  animation: slideInFromLeft 0.5s forwards;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes changeColor {
+  0% { background-color: #e63946; }
+  25% { background-color: #f1faee; }
+  50% { background-color: #a8dadc; }
+  75% { background-color: #457b9d; }
+  100% { background-color: #1d3557; }
+}
+
+@keyframes loading {
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
+
+.animation-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.loading-bar {
+  width: 80%;
+  height: 20px;
+  background-color: #e63946;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: loading 2s infinite ease-in-out, changeColor 8s infinite linear;
+  border-radius: 5px;
+}
+
+.animation-box::before,
+.animation-box::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 20px;
+  background-color: #e63946;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: loading 2s infinite ease-in-out, changeColor 8s infinite linear;
+  border-radius: 5px;
+}
+
+.animation-box.slide-in .loading-bar,
+.animation-box.slide-in::before,
+.animation-box.slide-in::after {
+  animation-play-state: running; /* Start animations */
+}
