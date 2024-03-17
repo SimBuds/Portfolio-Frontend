@@ -2,7 +2,7 @@ import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import '../assets/Header.css';
-import favicon from '../assets/icon.png'
+import favicon from '../assets/images/icon.png'
 
 const Header = () => {
   return (
