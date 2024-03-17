@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Cover from './pages/Cover';
 import Resume from './pages/Resume';
 import Projects from './pages/Projects';
-import Contact from './pages/Contact';
+import Capstone from './pages/Capstone';
 import './App.css';
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
         <Route path="/cover" element={<Cover />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/capstone" element={<Capstone />} />
       </Routes>
       <Footer />
     </Router>

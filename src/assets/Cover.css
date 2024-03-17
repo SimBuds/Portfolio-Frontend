@@ -1,0 +1,6 @@
+.cover-container {
+    min-height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center content vertically */
+}

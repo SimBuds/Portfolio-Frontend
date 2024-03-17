@@ -1,0 +1,47 @@
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Distribute space evenly between the image and the bio */
+    min-height: 100vh;
+    color: white;
+    background-color: #000;
+    flex-wrap: wrap; /* Allow items to wrap as needed */
+  }
+  
+  .hero-bio {
+    flex-basis: 50%; /* Allocate 50% of the space to the bio */
+    max-width: 50%; /* Ensure the bio does not exceed 50% of the container's width */
+    padding: 2rem; /* Add some padding for spacing */
+    box-sizing: border-box; /* Include padding in the element's total width and height */
+  }
+  
+  .hero-image {
+    flex-basis: 50%; /* Allocate 50% of the space to the image */
+    max-width: 50%; /* Ensure the image does not exceed 50% of the container's width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-image img {
+    max-width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain the aspect ratio */
+    object-fit: cover; /* Cover the area without stretching */
+  }
+
+.btn-hero {
+  margin-right: 1rem;
+  margin-left: 10rem;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  background-color: #fff; /* White background */
+  color: #000; /* Black text */
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Remove underline */
+}
+
+.btn-hero:hover {
+  background-color: #666; /* Darker background on hover */
+  color: #fff; /* White text */
+  text-decoration: none; /* Remove underline */
+}

@@ -1,0 +1,17 @@
+.footer .navbar-text {
+  color: #fff !important; /* Ensure the text is white */
+  padding-left: 1rem; /* Add padding to the left if needed */
+}
+
+/* If there are links in the footer, ensure they are also white */
+.footer a {
+  color: #fff !important; /* Ensure the links are white */
+  text-decoration: none; /* Optional: remove the underline from links */
+}
+
+/* Ensure the rest of the footer elements match the theme */
+.footer {
+  background-color: #000; /* Match the header's background color */
+  border-top: 2px solid #fff; /* Add a top border similar to the header's bottom border */
+  padding: 1rem 0; /* Add vertical padding */
+}

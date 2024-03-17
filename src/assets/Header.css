@@ -1,0 +1,62 @@
+/* Set the navbar background to black and text color to white */
+.navbar {
+    background-color: #000;
+    color: #fff;
+    border-bottom: 2px solid #fff; /* Add a white border line */
+    display: flex; /* Use flexbox to align items */
+    justify-content: space-between; /* Distribute space between elements */
+    align-items: center; /* Align items vertically */
+}
+  
+  /* Set the maximum width for the navbar container to ensure fluidness */
+  .navbar-expand-lg > .container,
+  .navbar-expand-lg > .container-fluid,
+  .navbar-expand-lg > .container-sm,
+  .navbar-expand-lg > .container-md,
+  .navbar-expand-lg > .container-lg,
+  .navbar-expand-lg > .container-xl,
+  .navbar-expand-lg > .container-xxl {
+    max-width: 90%; /* Adjust the max-width as needed */
+  }
+
+  
+/* Set the nav-link text color to white */
+.nav-link, .navbar-brand {
+    color: #fff !important; /* Use !important to override any default styles */
+}
+
+/* Change the background to white and text to black on hover */
+.nav-link:hover {
+    background-color: #fff;
+    color: #000 !important; /* Use !important to override any default styles */
+}
+
+/* Keep the navbar brand on the left and add padding */
+.navbar-brand {
+    margin-right: auto; /* This will push the navigation links towards the center */
+    padding-left: 3rem; /* Add padding to the left of the logo and title */
+    flex-grow: 0; /* Prevent the navbar-brand from taking up unnecessary space */
+}
+
+/* If you have a separate class for the logo, you can add padding specifically to it */
+.navbar-brand img {
+    width: 30px;
+    height: 30px;
+    padding-right: 0.5rem; /* Add padding to the right of the logo if needed */
+}
+
+/* Center the navigation links */
+.navbar-collapse {
+    justify-content: center;
+    flex-grow: 0; /* Prevent the navbar-collapse from taking up unnecessary space */
+}
+  
+/* Additional styles for spacing and alignment */
+.nav-item {
+    margin: 0 0.5rem; /* Add some horizontal spacing between nav items */
+}
+
+/* Ensure the navbar toggler (hamburger menu) is also aligned correctly on smaller screens */
+.navbar-toggler {
+    margin-left: auto;
+}

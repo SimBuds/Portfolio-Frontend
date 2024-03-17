@@ -1,12 +1,9 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import ListGroup from 'react-bootstrap/ListGroup';
+import { Container, Row, Col, ListGroup } from 'react-bootstrap';
 
 const Resume = () => {
   return (
-    <Container fluid className="p-5 bg-dark text-white">
+    <Container fluid className="p-5 bg-black text-white">
       <Row className="mb-5">
         <Col>
           <h2>Objective</h2>
@@ -47,7 +44,17 @@ const Resume = () => {
         </Col>
       </Row>
 
-      {/* Employment Experience Section */}
+      <Row className="mb-5">
+        <Col>
+          <h2>Awards</h2>
+          <ListGroup variant="flush">
+            <ListGroup.Item variant="dark">2022 Dean's Honour List Semester 1 & 2</ListGroup.Item>
+            <ListGroup.Item variant="dark">2023 Dean's Honour List Semester 3 & 4</ListGroup.Item>
+            <ListGroup.Item variant="dark">2024 Dean's Honour List Semester 5</ListGroup.Item>
+          </ListGroup>
+        </Col>
+      </Row>
+
       <Row className="mb-5">
         <Col>
           <h2>Employment Experience</h2>

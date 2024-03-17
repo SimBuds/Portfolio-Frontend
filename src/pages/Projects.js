@@ -19,7 +19,7 @@ const Projects = () => {
   }
 
   return (
-    <Container className="overflow-auto" style={{ maxHeight: 'calc(100vh - 100px)' }}>
+    <Container fluid className="p-5 bg-black text-white overflow-auto">
       <h1 className="text-center my-4">Projects</h1>
       <Row>
         {projects.map(project => (
