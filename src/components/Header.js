@@ -19,7 +19,7 @@ const Header = () => {
     <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
       <Nav className="mr-auto">
         <Nav.Item>
-          <Nav.Link as={NavLink} exact activeClassName="active" to="/">Home</Nav.Link>
+          <Nav.Link as={NavLink} activeClassName="active" to="/">Home</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={NavLink} activeClassName="active" to="/cover">Cover Page</Nav.Link>
