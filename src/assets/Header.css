@@ -50,3 +50,28 @@
 .navbar-toggler {
     margin-left: auto;
 }
+
+/* Existing styles for .navbar and other classes */
+
+@media (max-width: 992px) {
+    .navbar-brand img {
+      width: 20px; /* Adjust image size for mobile */
+      height: 20px;
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 8px 10px; /* Larger tap targets for mobile */
+    }
+  
+    /* Ensure the navbar toggle is visible and easily clickable */
+    .navbar-toggler {
+      padding: .25rem .75rem;
+    }
+  
+    /* Adjust navbar brand padding or margins as needed for mobile */
+    .navbar-brand {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+      padding-left: 1rem; /* Adjust padding for smaller screens */
+    }
+  }
+  

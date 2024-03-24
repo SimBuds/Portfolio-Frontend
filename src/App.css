@@ -11,3 +11,16 @@ html, body, #root {
 * {
   box-sizing: border-box;
 }
+
+/* Global CSS for mobile devices */
+@media (max-width: 992px) {
+  .container {
+    max-width: 100%; /* Adjust as necessary for your design */
+  }
+}
+
+@media (min-width: 993px) {
+  .container {
+    max-width: 960px; /* Adjust as necessary for your design */
+  }
+}
