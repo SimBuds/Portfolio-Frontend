@@ -27,8 +27,7 @@
 }
 
 .navbar-brand {
-    margin-right: auto;
-    padding-left: 3rem;
+    margin-left: 1rem; /* Align icon to the left */
     flex-grow: 0;
 }
 
@@ -39,39 +38,40 @@
 }
 
 .navbar-collapse {
-    justify-content: center;
-    flex-grow: 0;
+    justify-content: flex-end; /* Align items to the right */
+    flex-grow: 1;
 }
-  
+
 .nav-item {
     margin: 0 0.5rem;
 }
 
 .navbar-toggler {
-    margin-left: auto;
+    display: none; /* Hide toggler by default */
 }
 
-/* Existing styles for .navbar and other classes */
-
 @media (max-width: 992px) {
-    .navbar-brand img {
-      width: 20px; /* Adjust image size for mobile */
-      height: 20px;
-    }
-  
-    .navbar-nav .nav-link {
-      padding: 8px 10px; /* Larger tap targets for mobile */
-    }
-  
-    /* Ensure the navbar toggle is visible and easily clickable */
     .navbar-toggler {
-      padding: .25rem .75rem;
+        display: block; /* Show toggler in mobile view */
+        margin-right: 1rem; /* Align toggler to the right */
+        padding: .25rem .75rem;
     }
-  
-    /* Adjust navbar brand padding or margins as needed for mobile */
+
+    .navbar-brand img {
+        width: 20px; /* Adjust image size for mobile */
+        height: 20px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 8px 10px; /* Larger tap targets for mobile */
+    }
+
     .navbar-brand {
-      font-size: 0.9rem; /* Adjust font size for smaller screens */
-      padding-left: 1rem; /* Adjust padding for smaller screens */
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        padding-left: 1rem; /* Adjust padding for smaller screens */
     }
-  }
-  
+
+    .navbar-collapse {
+        justify-content: space-between; /* Adjust alignment for mobile */
+    }
+}

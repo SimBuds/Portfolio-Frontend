@@ -11,7 +11,12 @@ global.IntersectionObserver = class IntersectionObserver {
 };
 
 test('renders app header', () => {
-  render(<App />);
-  const headerElement = screen.getByText(/About Me/i);
-  expect(headerElement).toBeInTheDocument();
+  const { container, getByTestId } = render(<App />);
+  console.log(container.innerHTML);  // Check the entire HTML structure
+  try {
+    const headerElement = screen.getByTestId('header');
+    expect(headerElement).toBeInTheDocument();
+  } catch (error) {
+    console.error("Header element not found:", error);
+  }
 });

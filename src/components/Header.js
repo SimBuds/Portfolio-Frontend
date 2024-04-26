@@ -27,19 +27,13 @@ const Header = () => {
             <Nav.Link as={NavLink} to="/" className={({ isActive }) => getNavLinkClass(isActive)}>Home</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={NavLink} to="/cover" className={({ isActive }) => getNavLinkClass(isActive)}>Cover Page</Nav.Link>
+            <Nav.Link as={NavLink} to="/aboutme" className={({ isActive }) => getNavLinkClass(isActive)}>About Me</Nav.Link>
           </Nav.Item>
           <Nav.Item>
             <Nav.Link as={NavLink} to="/resume" className={({ isActive }) => getNavLinkClass(isActive)}>Resume</Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link as={NavLink} to="/experience" className={({ isActive }) => getNavLinkClass(isActive)}>Experience</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
             <Nav.Link as={NavLink} to="/projects" className={({ isActive }) => getNavLinkClass(isActive)}>Projects</Nav.Link>
-          </Nav.Item>
-          <Nav.Item>
-            <Nav.Link as={NavLink} to="/capstone" className={({ isActive }) => getNavLinkClass(isActive)}>Capstone</Nav.Link>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>

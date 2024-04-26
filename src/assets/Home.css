@@ -3,24 +3,36 @@
 }
 
 .hero-section {
-  min-height: auto;
-  min-width: auto;
+  min-height: auto; /* Ensures full viewport height */
+  min-width: auto; /* Ensures full viewport width */
   background-size: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
-  padding: 10px 0;
+  padding: 20px; /* Increased padding for better spacing */
 }
 
 .call-to-arms {
-  padding: 10px 0;
+  padding: 20px; /* Increased padding for better spacing */
   text-align: center;
 }
 
 .animated-section {
   display: flex;
   justify-content: center;
-  padding: 10px 0;
+  padding: 20px; /* Increased padding for better spacing */
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 10px; /* Reduced padding for smaller screens */
+  }
+  .call-to-arms, .animated-section {
+    padding: 10px; /* Consistent reduced padding for smaller screens */
+  }
+  .hero-image img {
+    max-width: 300px; /* Ensure photo is being sized in mobile to 300px */
+  }
 }

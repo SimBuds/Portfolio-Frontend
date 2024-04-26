@@ -1,18 +1,32 @@
 .resume {
-    font-family: Arial, sans-serif;
+    font-family: 'Helvetica Neue', sans-serif;
     padding: 20px;
-    color: white;
-    min-height: 100vh;
+    color: #F5F5F5;
+    margin: 20px auto;
+    max-width: 900px; /* Increased width for better readability */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Improved spacing between elements */
+    align-items: center;
   }
   
   .element {
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Increased spacing for better visual separation */
+    width: 100%; /* Keep element box sizes consistent */
+    padding: 10px; /* Added padding for better text readability */
+    background-color: #424242; /* Slight background contrast for element separation */
+    border-radius: 5px; /* Rounded corners for a softer look */
   }
   
   h1, h2 {
-    color: #FFF;
+    color: #FFFFFF;
+    text-align: center; /* Center align titles */
+    margin-bottom: 10px; /* Added margin for better spacing */
+    font-weight: bold; /* Bold font for better emphasis */
   }
   
   p {
-    color: #DDD;
+    color: #E0E0E0;
+    text-align: justify; /* Justified text for a cleaner, more professional look */
+    line-height: 1.6; /* Increased line height for better readability */
   }
