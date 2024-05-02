@@ -4,12 +4,10 @@ import '../assets/AboutMe.css'
 
 const AboutMe = () => {
   return (
-    <Container className="bg-black text-white py-5 cover-container">
-      <Row className="justify-content-md-center">
-        <Col md={8} className="about-me-col">
-        <p data-testid="header" className="header">
-          About Me
-        </p>
+    <Container fluid className="bg-black text-white py-5 cover-container">
+      <Row className="justify-content-center">
+        <Col xs={12} md={8} className="about-me-col">
+          <h1 className="header">More behind the mind.</h1>
           <div className="body mb-4">
             <p>I'm thrilled to share my journey as a Software Developer with you. With a strong passion for programming and a commitment to crafting high-quality code.</p>
             <p>My technical toolkit includes programming languages such as Java, C#, Python, ASP.NET, JavaScript, Rust, and React. This diverse skill set equips me with the knowledge and experience necessary for my future Software Developer career. I thrive in collaborative environments, contributing to team efforts by developing new features, troubleshooting and debugging issues, and delivering solutions that meet standards.</p>

@@ -35,6 +35,9 @@ const Header = () => {
           <Nav.Item>
             <Nav.Link as={NavLink} to="/projects" className={({ isActive }) => getNavLinkClass(isActive)}>Projects</Nav.Link>
           </Nav.Item>
+          <Nav.Item>
+            <Nav.Link as={NavLink} to="/contactme" className={({ isActive }) => getNavLinkClass(isActive)}>Contact Me</Nav.Link>
+          </Nav.Item>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

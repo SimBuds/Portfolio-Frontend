@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <Container fluid className="home-layout">
       <HeroSection />
-      <CallToArms />
       <AnimatedSection />
+      <CallToArms />
     </Container>
   );
 };

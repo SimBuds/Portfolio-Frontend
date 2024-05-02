@@ -2,18 +2,21 @@
   color: white;
   background-color: #000;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-bio {
-  flex-basis: 50%;
-  max-width: 50%;
+  flex-basis: 100%;
+  max-width: 100%;
   padding: 2rem;
   box-sizing: border-box;
 }
 
 .hero-image {
-  flex-basis: 50%;
-  max-width: 50%;
+  flex-basis: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,4 +26,11 @@
   max-width: 100%;
   height: auto;
   object-fit: cover; 
+}
+
+@media (min-width: 768px) {
+  .hero-bio, .hero-image {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
 }

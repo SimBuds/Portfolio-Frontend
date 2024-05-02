@@ -6,21 +6,35 @@ html, body, #root {
   padding: 0;
   overflow-x: hidden; /* Prevents horizontal scroll */
   background-color: black;
+  font-family: 'Roboto', sans-serif; /* Modern, readable font */
+  color: #fff; /* Ensures text is visible on the black background */
 }
 
 * {
   box-sizing: border-box;
 }
 
-/* Global CSS for mobile devices */
+/* Ensure proper scaling and readability on mobile devices */
+html {
+  font-size: 16px; /* Base font size */
+}
+
+body {
+  -webkit-font-smoothing: antialiased; /* Enhances text rendering */
+  -moz-osx-font-smoothing: grayscale; /* Enhances text rendering on macOS */
+}
+
+/* Responsive container settings */
 @media (max-width: 992px) {
   .container {
-    max-width: 100%; /* Adjust as necessary for your design */
+    max-width: 100%; /* Full width on smaller screens */
+    padding: 0 15px; /* Padding to prevent content from touching the edges */
   }
 }
 
 @media (min-width: 993px) {
   .container {
-    max-width: 960px; /* Adjust as necessary for your design */
+    max-width: 960px; /* Fixed max width on larger screens */
+    margin: 0 auto; /* Center the container */
   }
 }

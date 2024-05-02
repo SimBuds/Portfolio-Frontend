@@ -1,8 +1,8 @@
 /* General body styles */
 body {
-  font-family: 'Arial', sans-serif;
-  color: #f8f9fa; /* Lighter text color for better readability */
-  background-color: #282c34; /* Darker shade for modern look */
+  font-family: 'Roboto', sans-serif; /* Updated font to match App.css */
+  color: #fff; /* Updated text color to white for consistency with App.css */
+  background-color: black; /* Updated background color to match App.css */
   margin: 0;
   padding: 0;
 }
@@ -11,11 +11,11 @@ body {
 .cover-container {
   max-width: 100%;
   padding: 2rem 1rem; /* Increased padding for better spacing */
-  background-color: #282c34; /* Consistent background color with body */
+  background-color: black; /* Updated background color to match body */
 }
 
 /* Header styles */
-.header p {
+.header {
   font-size: 2.5rem; /* Larger font size for emphasis */
   text-align: center;
   margin: 0 0 2rem 0; /* Increased bottom margin for spacing */
@@ -23,14 +23,14 @@ body {
 }
 
 /* Body text styles */
-.body p {
+.body {
   font-size: 1.4rem; /* Slightly larger font for readability */
   line-height: 1.5; /* Increased line height for readability */
   margin-bottom: 1rem; /* Increased margin for better separation */
 }
 
 /* Styling for closing section */
-.closing p {
+.closing {
   font-size: 1.2rem; /* Slightly larger font size */
   text-align: center;
   color: #adb5bd; /* Softer color for less emphasis */
