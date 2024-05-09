@@ -3,80 +3,92 @@
   background-color: #000;
   border-bottom: 2px solid #fff;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 0 1rem;
   height: 70px;
 }
 
 .navbar-expand-lg > .container,
 .navbar-expand-lg > .container-fluid {
-  max-width: 90%;
-}
-
-.nav-link, .navbar-brand {
-  color: #fff !important;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.nav-link:hover {
-  background-color: #fff;
-  color: #000 !important;
+  display: flex;
+  justify-content: space-between; /* Ensures content is spread out */
+  align-items: center;
+  width: 100%; /* Ensures the container takes full width of the navbar */
 }
 
 .navbar-brand {
-  margin-left: 1rem;
   display: flex;
   align-items: center;
+  margin-left: 1rem; /* Space between logo and edge of navbar */
 }
 
 .navbar-brand img {
   width: 40px;
   height: 40px;
-  padding-right: 0.5rem;
+  margin-right: 0.5rem; /* Space between logo and text */
 }
 
-.navbar-collapse {
-  justify-content: flex-end;
-  flex-grow: 1;
+.navbar-center {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1; /* Allows nav items to take up the flex space */
+  align-items: center;
+}
+
+.navbar-social {
+  margin-right: auto; /* Aligns social icons next to the nav center */
 }
 
 .nav-item {
-  margin: 0 0.75rem;
+  margin: 0 0.75rem; /* Space between each nav item */
 }
 
-.navbar-toggler {
-  display: none; /* Adjust display based on responsive needs */
+.nav-link, .navbar-brand {
+  color: #fff !important;
+  font-family: 'Arial', sans-serif; /* Setting a softer font */
+  text-transform: uppercase;
+  font-weight: normal; /* Softer font appearance */
+}
+
+.nav-link:hover {
+  color: red !important; /* Font color changes to red on hover */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
 }
 
 .nav-link.btn-outline-light {
   border: 2px solid red;
   font-size: 0.8rem;
+  padding: 5px 10px; /* Better button padding */
+  background-color: transparent;
+}
+
+.nav-link.btn-outline-light:hover {
+  background-color: red; /* Background color on hover */
+  color: #fff !important;
 }
 
 @media (max-width: 992px) {
   .navbar-toggler {
-    display: block;
-    margin-right: 1rem;
-    padding: .25rem .75rem;
+    display:block;
+    margin-left: auto; /* Align toggler to the right */
+    padding: 0.25rem 0.75rem;
   }
 
-  .navbar-brand img {
-    width: 30px;
-    height: 30px;
+  .navbar-brand, .navbar-center, .navbar-social, .navbar-right {
+    flex-direction: column;
+    align-items: center;
   }
 
-  .navbar-nav .nav-link {
-    padding: 8px 10px;
+  .navbar-nav {
+    flex-grow: 0; /* Stops nav from taking up unnecessary space */
   }
 
-  .navbar-brand {
-    font-size: 0.9rem;
-    padding-left: 0;
-  }
-
-  .navbar-collapse {
-    justify-content: space-between;
+  .nav-item {
+    padding: 8px 10px; /* Larger tap targets for mobile */
   }
 }

@@ -7,11 +7,13 @@ import {
   siDotnet, siSpringboot, siReact, siAngular,
   siDocker, siPostman, siGit
 } from 'simple-icons/icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import '../assets/TechStack.css';
-
 
 const techCategories = {
   "Programming Languages:": [
+    { name: 'Java', color: '#f89820', icon: <FontAwesomeIcon icon={faCoffee} /> },
     { name: 'Python', color: '#3776AB', icon: siPython },
     { name: 'JavaScript', color: '#F7DF1E', icon: siJavascript },
     { name: 'C#', color: '#239120', icon: siCsharp },
@@ -52,10 +54,14 @@ function TechStack() {
       {Object.entries(techCategories).map(([category, techs]) => (
         <div className="category" key={category}>
           <h2>{category}</h2>
-          <div className="category-items">
+          <div className={`${category === "Programming Languages:" ? 'languages-items' : 'category-items'}`}>
             {techs.map(tech => (
               <div className="tech-item" key={tech.name} style={{ backgroundColor: tech.color }}>
-                <svg viewBox="0 0 24 24" dangerouslySetInnerHTML={{ __html: tech.icon.svg }} />
+                {React.isValidElement(tech.icon) ? (
+                  tech.icon
+                ) : (
+                  <svg viewBox="0 0 24 24" dangerouslySetInnerHTML={{ __html: tech.icon.svg }} />
+                )}
                 <p>{tech.name}</p>
               </div>
             ))}

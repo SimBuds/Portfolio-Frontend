@@ -1,61 +1,71 @@
-/* Global settings for tech stack */
+/* TechStack.css */
 .tech-stack {
-  max-width: 1200px; 
-  margin: 20px auto; /* Reduced vertical margin */
-  padding: 10px; /* Reduced padding */
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+  background: #121212;
 }
 
-/* Category titles */
 .category h2 {
-  font-size: 1.2rem; /* Smaller font size */
-  color: white;
-  margin-bottom: 5px; /* Reduced margin */
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 10px;
 }
 
-/* Grid layout for items */
+/* Adjusted grid setup for all categories */
 .category-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 5px; /* Smaller gaps */
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
 }
 
-/* Individual tech items */
+/* Specific setup for programming languages to force single row */
+.languages-items {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* Allows horizontal scrolling */
+  gap: 10px;
+  padding-bottom: 10px; /* Ensures padding when scrolled */
+}
+
 .tech-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 8px; /* Smaller padding */
-  background-color: #FFFFFF;
-  border-radius: 5px;
+  padding: 12px;
+  background-color: #FFF;
+  border-radius: 8px;
   transition: transform 0.3s;
+  min-width: 120px; /* Ensures uniform size */
 }
 
 .tech-item:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 .tech-item svg {
-  width: 40px; /* Smaller icon size */
-  height: 40px;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
 }
 
 .tech-item p {
-  font-size: 0.75rem; /* Smaller text size */
+  font-size: 0.9rem;
   color: #333;
 }
 
 @media (max-width: 768px) {
-  .tech-stack {
-    padding: 5px;
-  }
-
   .category-items {
-    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   }
 
   .tech-item svg {
-    width: 35px; /* Even smaller icons for mobile */
-    height: 35px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .tech-item p {
+    font-size: 0.8rem;
   }
 }

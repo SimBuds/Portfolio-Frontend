@@ -7,7 +7,6 @@ import '../assets/Header.css';
 import favicon from '../assets/images/icon.png';
 
 const Header = () => {
-
   const getNavLinkClass = (isActive) => {
     return isActive ? 'active' : '';
   };
@@ -23,9 +22,9 @@ const Header = () => {
           />
           Casey Hsu
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" className="navbar-toggler-icon" />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
-          <Nav className="mr-auto">
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mx-auto navbar-center">
             <Nav.Item>
               <Nav.Link as={NavLink} to="/projects" className={({ isActive }) => getNavLinkClass(isActive)}>Projects</Nav.Link>
             </Nav.Item>
@@ -36,7 +35,7 @@ const Header = () => {
               <Nav.Link as={NavLink} to="/aboutme" className={({ isActive }) => getNavLinkClass(isActive)}>About Me</Nav.Link>
             </Nav.Item>
           </Nav>
-          <Nav className="ml-auto">
+          <Nav className="ml-auto navbar-social">
             <Nav.Item>
               <Nav.Link href="https://twitter.com/caseyhsuble" target="_blank">
                 <FontAwesomeIcon icon={faTwitter} />
@@ -55,7 +54,7 @@ const Header = () => {
           </Nav>
           <Nav>
             <Nav.Item>
-              <Nav.Link as={NavLink} to="/contactme" className="btn btn-outline-light">Let's chat</Nav.Link>
+              <Nav.Link as={NavLink} to="/contactme" className="btn btn-outline-light">Let's Chat</Nav.Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
