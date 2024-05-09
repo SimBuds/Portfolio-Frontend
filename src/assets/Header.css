@@ -1,77 +1,82 @@
+/* Header.css */
 .navbar {
-    background-color: #000;
-    color: #fff;
-    border-bottom: 2px solid #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: #000;
+  border-bottom: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  height: 70px;
 }
 
 .navbar-expand-lg > .container,
-.navbar-expand-lg > .container-fluid,
-.navbar-expand-lg > .container-sm,
-.navbar-expand-lg > .container-md,
-.navbar-expand-lg > .container-lg,
-.navbar-expand-lg > .container-xl,
-.navbar-expand-lg > .container-xxl {
-    max-width: 90%;
+.navbar-expand-lg > .container-fluid {
+  max-width: 90%;
 }
 
 .nav-link, .navbar-brand {
-    color: #fff !important;
+  color: #fff !important;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .nav-link:hover {
-    background-color: #fff;
-    color: #000 !important;
+  background-color: #fff;
+  color: #000 !important;
 }
 
 .navbar-brand {
-    margin-left: 1rem; /* Align icon to the left */
-    flex-grow: 0;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-brand img {
-    width: 30px;
-    height: 30px;
-    padding-right: 0.5rem;
+  width: 40px;
+  height: 40px;
+  padding-right: 0.5rem;
 }
 
 .navbar-collapse {
-    justify-content: flex-end; /* Align items to the right */
-    flex-grow: 1;
+  justify-content: flex-end;
+  flex-grow: 1;
 }
 
 .nav-item {
-    margin: 0 0.5rem;
+  margin: 0 0.75rem;
 }
 
 .navbar-toggler {
-    display: none; /* Hide toggler by default */
+  display: none; /* Adjust display based on responsive needs */
+}
+
+.nav-link.btn-outline-light {
+  border: 2px solid red;
+  font-size: 0.8rem;
 }
 
 @media (max-width: 992px) {
-    .navbar-toggler {
-        display: block; /* Show toggler in mobile view */
-        margin-right: 1rem; /* Align toggler to the right */
-        padding: .25rem .75rem;
-    }
+  .navbar-toggler {
+    display: block;
+    margin-right: 1rem;
+    padding: .25rem .75rem;
+  }
 
-    .navbar-brand img {
-        width: 20px; /* Adjust image size for mobile */
-        height: 20px;
-    }
+  .navbar-brand img {
+    width: 30px;
+    height: 30px;
+  }
 
-    .navbar-nav .nav-link {
-        padding: 8px 10px; /* Larger tap targets for mobile */
-    }
+  .navbar-nav .nav-link {
+    padding: 8px 10px;
+  }
 
-    .navbar-brand {
-        font-size: 0.9rem; /* Adjust font size for smaller screens */
-        padding-left: 1rem; /* Adjust padding for smaller screens */
-    }
+  .navbar-brand {
+    font-size: 0.9rem;
+    padding-left: 0;
+  }
 
-    .navbar-collapse {
-        justify-content: space-between; /* Adjust alignment for mobile */
-    }
+  .navbar-collapse {
+    justify-content: space-between;
+  }
 }

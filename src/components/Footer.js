@@ -1,14 +1,14 @@
 import React from 'react';
-import { Container, Navbar } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import '../assets/Footer.css';
 
 const Footer = () => {
   return (
-    <Navbar fixed="bottom" className="footer">
+    <footer className="footer">
       <Container fluid className="justify-content-center">
-        <Navbar.Text>© 2024 Casey's Portfolio</Navbar.Text>
+        <p>© 2024 Casey's Portfolio</p>
       </Container>
-    </Navbar>
+    </footer>
   );
 };
 

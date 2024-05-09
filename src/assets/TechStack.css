@@ -1,0 +1,61 @@
+/* Global settings for tech stack */
+.tech-stack {
+  max-width: 1200px; 
+  margin: 20px auto; /* Reduced vertical margin */
+  padding: 10px; /* Reduced padding */
+}
+
+/* Category titles */
+.category h2 {
+  font-size: 1.2rem; /* Smaller font size */
+  color: white;
+  margin-bottom: 5px; /* Reduced margin */
+}
+
+/* Grid layout for items */
+.category-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 5px; /* Smaller gaps */
+}
+
+/* Individual tech items */
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px; /* Smaller padding */
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.tech-item:hover {
+  transform: scale(1.03);
+}
+
+.tech-item svg {
+  width: 40px; /* Smaller icon size */
+  height: 40px;
+}
+
+.tech-item p {
+  font-size: 0.75rem; /* Smaller text size */
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .tech-stack {
+    padding: 5px;
+  }
+
+  .category-items {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  }
+
+  .tech-item svg {
+    width: 35px; /* Even smaller icons for mobile */
+    height: 35px;
+  }
+}

@@ -1,15 +1,18 @@
-.footer .navbar-text {
-  color: #fff !important;
-  padding-left: 1rem;
-}
-
-.footer a {
-  color: #fff !important;
-  text-decoration: none;
-}
-
+/* Footer.css */
 .footer {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: #000;
+  color: #fff;
   border-top: 2px solid #fff;
   padding: 1rem 0;
+  text-align: center;
+  z-index: 1020;
+}
+
+.footer p {
+  color: #fff !important;
+  padding-left: 1rem;
 }

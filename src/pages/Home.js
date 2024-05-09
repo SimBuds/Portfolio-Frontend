@@ -1,16 +1,22 @@
 import React from 'react';
-import HeroSection from '../components/HeroSection.js'
-import CallToArms from '../components/CallToArms.js';
-import AnimatedSection from '../components/AnimatedSection.js';
-import '../assets/Home.css'
 import { Container } from 'react-bootstrap';
+import HeroSection from '../components/HeroSection.js';
+import TechStack from '../components/TechStack.js';
+import CallToArms from '../components/CallToArms.js';
+import '../assets/Home.css';
 
 const Home = () => {
   return (
     <Container fluid className="home-layout">
-      <HeroSection />
-      <AnimatedSection />
-      <CallToArms />
+      <section aria-label="Hero Section">
+        <HeroSection />
+      </section>
+      <section aria-label="Technology Stack">
+        <TechStack />
+      </section>
+      <section aria-label="Call to Action">
+        <CallToArms />
+      </section>
     </Container>
   );
 };
