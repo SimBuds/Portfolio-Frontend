@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/HeroSection.css'
+import '../assets/HeroSection.css';
 import heroImage from '../assets/images/hero-image.jpg';
 
 const HeroSection = () => {
@@ -13,7 +13,7 @@ const HeroSection = () => {
           </p>
         </div>
         <div className="col-md-6 hero-image">
-          <img src={heroImage} alt="hero" className="img-fluid"/>
+          <img src={heroImage} alt="Casey Hsu" className="img-fluid"/>
         </div>
       </div>
     </div>
