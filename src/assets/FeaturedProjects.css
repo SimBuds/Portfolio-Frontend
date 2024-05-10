@@ -1,0 +1,49 @@
+.featured-projects {
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    padding: 20px; /* Padding for spacing */
+    background-color: #000; /* Dark background for the slider */
+    gap: 20px; /* Space between cards */
+  }
+  
+  .project-card {
+    flex: 0 0 300px; /* Flex basis for each card, adjust width as necessary */
+    height: 200px; /* Fixed height for uniformity */
+    position: relative;
+    color: white; /* Text color */
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners for aesthetic */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+    background: #333; /* Darker card background */
+    display: flex;
+    align-items: flex-end; /* Align text to the bottom */
+  }
+  
+  .project-card img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images cover the card */
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0.5; /* Lower opacity so text is readable */
+  }
+  
+  .project-card:hover img {
+    opacity: 0.3; /* Further reduce opacity on hover */
+  }
+  
+  .project-info {
+    position: relative;
+    z-index: 2; /* Ensure text is above the image */
+    padding: 10px; /* Padding inside the card */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text */
+    width: 100%; /* Full width of the card */
+  }
+  
+  .project-info h3, .project-info p {
+    margin: 5px 0; /* Spacing for text elements */
+    text-shadow: 1px 1px 5px black; /* Text shadow for better readability */
+  }  
