@@ -27,7 +27,7 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto navbar-center">
             <Nav.Item>
-              <Nav.Link as={NavLink} to="/projects" className={({ isActive }) => getNavLinkClass(isActive)}>Projects</Nav.Link>
+            <HashLink smooth to="/#projects" className="nav-link">Showcase</HashLink>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link as={NavLink} to="/resume.pdf" className={({ isActive }) => getNavLinkClass(isActive)}>Resume</Nav.Link>

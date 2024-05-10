@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 
-const Projects = () => {
+const Project = () => {
   const [projects, setProjects] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -41,4 +41,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Project;

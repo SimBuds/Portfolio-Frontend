@@ -1,6 +1,6 @@
 .about-section {
     color: white;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    background: #121212;
     margin: 0 auto;
     padding: 2rem; /* Top and bottom padding */
     display: flex;
@@ -22,7 +22,7 @@
   
   .about-text h2 {
     font-size: 2rem; /* Larger font size for the heading */
-    color: red; /* Red color for heading */
+    color: #FF474C; /* Red color for heading */
     margin-bottom: 1rem; /* Space below the heading */
   }
   

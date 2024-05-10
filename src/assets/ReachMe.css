@@ -1,0 +1,36 @@
+.reach-me {
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px; /* Adjust padding as needed */
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle top border */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Subtle bottom border */
+}
+
+.reach-me h1 {
+  font-size: 2rem; /* Larger font size for the title */
+  color: #FF474C; /* Custom color for the text */
+  margin-bottom: 20px; /* Space between title and paragraph */
+}
+
+.reach-me p {
+  font-size: 1.25rem; /* Comfortable reading size for paragraph */
+  margin-bottom: 30px; /* Space before the button */
+  opacity: 0.9; /* Slightly dimmed text for better focus on the button */
+}
+
+.reach-me-button {
+  background-color: #FF474C; /* Matching the button color with the text */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-size: 1rem;
+  text-transform: uppercase; /* Stylistic choice for the button text */
+  text-decoration: none; /* Removes underline from the link */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Adds depth to the button */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.reach-me-button:hover {
+  background-color: #FF7043; /* Darker shade on hover for interaction feedback */
+}

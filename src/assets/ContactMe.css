@@ -1,56 +1,62 @@
-/* Base styles for the entire contact form container */
+/* Styles for the container div */
 .contact-form {
     max-width: 600px; /* Maximum width of the form */
     margin: 40px auto; /* Center the form on the page with vertical spacing */
     padding: 20px;
-    background: #f9f9f9; /* Light grey background */
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    border-radius: 8px; /* Rounded corners for a softer look */
-    font-family: Arial, sans-serif; /* Font styling */
+    background: #333; /* Darker background for higher contrast */
+    color: #fff; /* White text color for readability */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for more depth */
+    border-radius: 10px; /* Smoother rounded corners */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern font styling */
 }
 
 /* Styles for the heading */
 .contact-form h1 {
     text-align: center; /* Center the heading */
-    color: #333; /* Dark grey color for the text */
+    color: #fff; /* White color for the text */
+    margin-bottom: 30px; /* More space below the heading */
 }
 
 /* Style adjustments for form inputs and textarea */
 .contact-form input[type="email"],
 .contact-form textarea {
     width: 100%; /* Full width to fill the form */
-    padding: 10px; /* Padding for better text visibility */
-    margin-top: 8px; /* Margin top for spacing */
-    margin-bottom: 16px; /* Margin bottom for spacing */
-    border: 1px solid #ccc; /* Light grey border */
-    border-radius: 4px; /* Rounded borders on the inputs */
+    padding: 15px 20px; /* Larger padding for a better user experience */
+    margin-top: 10px; /* Slightly increased top margin */
+    margin-bottom: 20px; /* Larger bottom margin for more spacing */
+    border: 2px solid #555; /* Thicker border for a bolder look */
+    background: #222; /* Darker input backgrounds */
+    color: #ccc; /* Lighter text color for visibility */
+    border-radius: 5px; /* Rounded borders but less round than the container */
     box-sizing: border-box; /* Box sizing adjusted for padding */
 }
 
 /* Styling for labels to increase accessibility */
 .contact-form label {
     font-weight: bold; /* Bold font for better readability */
-    color: #555; /* Slightly darker grey for contrast */
+    color: #aaa; /* Lighter grey for subtle contrast */
     display: block; /* Block display to align with inputs */
+    margin-bottom: 5px; /* Space between label and input */
 }
 
 /* Styles for the send button */
 .contact-form .send-button {
     width: 100%; /* Full width to match inputs */
-    padding: 10px 20px; /* Padding for better touch area */
-    background-color: #5c67f2; /* A pleasant blue background */
+    padding: 12px 20px; /* Slightly larger padding for a better touch area */
+    background-color: #5c67f2; /* Bright blue background for visibility */
     color: white; /* White text for contrast */
-    font-size: 16px; /* Font size for readability */
+    font-size: 18px; /* Larger font size for readability */
     border: none; /* No border for a cleaner look */
-    border-radius: 4px; /* Rounded borders to match inputs */
+    border-radius: 5px; /* Rounded borders to match inputs */
     cursor: pointer; /* Cursor pointer to indicate clickable */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
 }
 
 /* Hover and focus styles for the button for interactive feedback */
 .contact-form .send-button:hover,
 .contact-form .send-button:focus {
     background-color: #4a54e1; /* Darker shade of blue for hover effect */
+    transform: scale(1.05); /* Slightly larger button on hover for emphasis */
 }
 
 /* Media query for responsiveness on smaller screens */
@@ -58,6 +64,5 @@
     .contact-form {
         margin: 20px; /* Smaller margin on smaller screens */
         padding: 10px; /* Less padding on smaller screens */
-        margin-bottom: 60px; /* Increased bottom margin to prevent cutoff by footer */
     }
 }

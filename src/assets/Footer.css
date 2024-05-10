@@ -1,18 +1,35 @@
 /* Footer.css */
 .footer {
-  position: relative;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #000;
-  color: #fff;
-  border-top: 2px solid #fff;
-  padding: 1rem 0;
+  background-color: #121212;
+  color: white;
+  padding: 20px 0;
+  font-size: 1rem;
   text-align: center;
-  z-index: 1020;
 }
 
-.footer p {
-  color: #fff !important;
-  padding-left: 1rem;
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 10px; /* Space above the copyright text */
+}
+
+.footer-socials a {
+  color: white; /* Ensures icons are white */
+  transition: color 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #FF8A65; /* Color change on hover to match the header style */
+}
+
+/* Styles for mobile */
+@media (max-width: 992px) {
+  .footer {
+    padding: 0.5rem 0;
+  }
+
+  .footer p {
+    padding-left: 0.5rem;
+  }
 }
