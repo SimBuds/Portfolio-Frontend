@@ -1,12 +1,11 @@
 .hero-section {
   color: white;
-  background-color: #000; /* Ensure the background color fits the overall theme */
+  background-color: #000; /* Consistent dark theme */
   margin: 0 auto;
-  padding: 2rem; /* Add padding around the section */
+  padding: 2rem; /* Uniform padding */
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center; /* Centers the text within the hero-text div */
 }
 
 .hero-text {
@@ -14,6 +13,7 @@
   max-width: 100%;
   padding: 2rem;
   box-sizing: border-box;
+  text-align: center; /* Center alignment for text */
 }
 
 .hero-image {
@@ -25,27 +25,27 @@
 }
 
 .hero-image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  object-fit: cover; /* Ensures the image covers the area without stretching */
+  object-fit: cover; /* Ensures the image is properly scaled */
 }
 
 @media (min-width: 992px) {
   .hero-section {
-    flex-direction: row; /* Adjusts the direction of flex items on larger screens */
-    text-align: left; /* Aligns text to the left on larger screens */
+    flex-direction: row; /* Side-by-side layout for larger screens */
+    text-align: left; /* Text alignment for non-mobile views */
   }
-  
+
   .hero-text, .hero-image {
     flex-basis: 50%;
     max-width: 50%;
   }
 
   .hero-text {
-    padding-right: 1rem; /* Adds padding to separate the text from the image */
+    padding-right: 1rem; /* Right padding for spacing between text and image */
   }
 
   .hero-image {
-    padding-left: 1rem; /* Adds padding to separate the image from the text */
+    padding-left: 1rem; /* Left padding for spacing */
   }
 }

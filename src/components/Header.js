@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 import '../assets/Header.css';
@@ -32,7 +33,7 @@ const Header = () => {
               <Nav.Link as={NavLink} to="/resume.pdf" className={({ isActive }) => getNavLinkClass(isActive)}>Resume</Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as={NavLink} to="/aboutme" className={({ isActive }) => getNavLinkClass(isActive)}>About Me</Nav.Link>
+              <HashLink smooth to="/#aboutme" className="nav-link">About Me</HashLink>
             </Nav.Item>
           </Nav>
           <Nav className="ml-auto navbar-social">
