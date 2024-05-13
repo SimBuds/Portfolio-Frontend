@@ -30,7 +30,7 @@
   object-fit: cover; /* Ensures the image is properly scaled */
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .hero-section {
     flex-direction: row; /* Side-by-side layout for larger screens */
     text-align: left; /* Text alignment for non-mobile views */

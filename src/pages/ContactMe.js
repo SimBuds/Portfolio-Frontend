@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import '../assets/ContactMe.css'
+import '../assets/ContactMe.css';
 
 function ContactMe() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [isLoading, setLoading] = useState(false);
-  
+
     const handleSubmit = async (event) => {
       event.preventDefault();
       setLoading(true);
@@ -15,10 +15,7 @@ function ContactMe() {
           headers: {
             'Content-Type': 'application/json',
           },
-          body: JSON.stringify({
-            email: email,
-            message: message
-          }),
+          body: JSON.stringify({ email, message }),
         });
         setLoading(false);
         if (response.ok) {
@@ -34,32 +31,34 @@ function ContactMe() {
         setLoading(false);
       }
     };
-  
+
     return (
-      <div className="contact-form">
-        <h1>Contact Me</h1>
-        <form onSubmit={handleSubmit}>
-          <label htmlFor="email">Your Email:</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-          <label htmlFor="message">Your Message:</label>
-          <textarea
-            id="message"
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          />
-          <button type="submit" className="send-button" disabled={isLoading}>
-            {isLoading ? 'Sending...' : 'Send Email'}
-          </button>
-        </form>
+      <div className="contact-page">
+        <h1>Feel free to reach out!</h1>
+        <div className="contact-form">
+          <form onSubmit={handleSubmit}>
+            <label htmlFor="email">Your Email:</label>
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+            <label htmlFor="message">Your Message:</label>
+            <textarea
+              id="message"
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              required
+            />
+            <button type="submit" className="send-button" disabled={isLoading}>
+              {isLoading ? 'Sending...' : 'Send Email'}
+            </button>
+          </form>
+        </div>
       </div>
     );
-  }  
+}
 
 export default ContactMe;

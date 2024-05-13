@@ -1,7 +1,7 @@
 /* TechStack.css */
 .tech-stack {
-  max-width: 1000px;
-  margin: 10px auto;
+  max-width: 800px;
+  margin: 20px auto;
   padding: 5px;
 }
 
@@ -11,20 +11,11 @@
   margin-bottom: 10px;
 }
 
-/* Adjusted grid setup for all categories */
-.category-items {
+/* Specific setup for evenly distributed columns */
+.category-items, .languages-items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px;
-}
-
-/* Specific setup for programming languages to force single row */
-.languages-items {
-  display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto; /* Allows horizontal scrolling */
-  gap: 10px;
-  padding-bottom: 10px; /* Ensures padding when scrolled */
 }
 
 .tech-item {
@@ -33,14 +24,14 @@
   align-items: center;
   justify-content: center;
   padding: 12px;
-  background-color: #FFF;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   transition: transform 0.3s;
-  min-width: 120px; /* Ensures uniform size */
+  min-width: 120px;
 }
 
 .tech-item:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .tech-item svg {
@@ -55,10 +46,11 @@
 }
 
 @media (max-width: 768px) {
-  .category-items {
+  .category-items, .languages-items {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center; /* Add this line to center the items */
   }
-
+  
   .tech-item svg {
     width: 40px;
     height: 40px;

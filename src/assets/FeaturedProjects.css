@@ -72,7 +72,7 @@
   font-size: 0.8rem; /* Font size adjustment */
 }
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .featured-projects {
     cursor: auto; /* Removes grabbing cursor on mobile */
   }

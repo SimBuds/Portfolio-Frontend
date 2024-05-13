@@ -33,7 +33,7 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Shadow for depth */
   }
   
-  @media (min-width: 992px) {
+  @media (min-width: 768px) {
     .about-section .row {
       text-align: center;
     }

@@ -1,68 +1,69 @@
-/* Styles for the container div */
+.contact-page {
+    display: flex;
+    flex-direction: column; /* Ensure items are stacked vertically */
+    justify-content: center;
+    align-items: center;
+    height: 90vh; /* Set height to full viewport height */
+    padding: 20px; /* Add padding around the content */
+}
+
 .contact-form {
-    max-width: 600px; /* Maximum width of the form */
-    margin: 40px auto; /* Center the form on the page with vertical spacing */
+    width: 100%; /* Set width to full to use max-width effectively */
+    max-width: 600px;
+    margin: 20px auto;
     padding: 20px;
-    background: #333; /* Darker background for higher contrast */
-    color: #fff; /* White text color for readability */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for more depth */
-    border-radius: 10px; /* Smoother rounded corners */
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern font styling */
+    background: #333;
+    color: #fff;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* Styles for the heading */
 .contact-form h1 {
-    text-align: center; /* Center the heading */
-    color: #fff; /* White color for the text */
-    margin-bottom: 30px; /* More space below the heading */
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-/* Style adjustments for form inputs and textarea */
 .contact-form input[type="email"],
 .contact-form textarea {
-    width: 100%; /* Full width to fill the form */
-    padding: 15px 20px; /* Larger padding for a better user experience */
-    margin-top: 10px; /* Slightly increased top margin */
-    margin-bottom: 20px; /* Larger bottom margin for more spacing */
-    border: 2px solid #555; /* Thicker border for a bolder look */
-    background: #222; /* Darker input backgrounds */
-    color: #ccc; /* Lighter text color for visibility */
-    border-radius: 5px; /* Rounded borders but less round than the container */
-    box-sizing: border-box; /* Box sizing adjusted for padding */
+    width: 100%;
+    padding: 15px 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #555;
+    background: #222;
+    color: #ccc;
+    border-radius: 5px;
 }
 
-/* Styling for labels to increase accessibility */
 .contact-form label {
-    font-weight: bold; /* Bold font for better readability */
-    color: #aaa; /* Lighter grey for subtle contrast */
-    display: block; /* Block display to align with inputs */
-    margin-bottom: 5px; /* Space between label and input */
+    font-weight: bold;
+    color: #aaa;
+    display: block;
+    margin-bottom: 5px;
 }
 
-/* Styles for the send button */
 .contact-form .send-button {
-    width: 100%; /* Full width to match inputs */
-    padding: 12px 20px; /* Slightly larger padding for a better touch area */
-    background-color: #5c67f2; /* Bright blue background for visibility */
-    color: white; /* White text for contrast */
-    font-size: 18px; /* Larger font size for readability */
-    border: none; /* No border for a cleaner look */
-    border-radius: 5px; /* Rounded borders to match inputs */
-    cursor: pointer; /* Cursor pointer to indicate clickable */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effect */
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #5c67f2;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-/* Hover and focus styles for the button for interactive feedback */
 .contact-form .send-button:hover,
 .contact-form .send-button:focus {
-    background-color: #4a54e1; /* Darker shade of blue for hover effect */
-    transform: scale(1.05); /* Slightly larger button on hover for emphasis */
+    background-color: #4a54e1;
+    transform: scale(1.05);
 }
 
-/* Media query for responsiveness on smaller screens */
 @media (max-width: 768px) {
     .contact-form {
-        margin: 20px; /* Smaller margin on smaller screens */
-        padding: 10px; /* Less padding on smaller screens */
+        margin: 10px;
+        padding: 15px;
     }
 }
