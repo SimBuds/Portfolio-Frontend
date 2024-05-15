@@ -1,21 +1,44 @@
 /* TechStack.css */
 
 .tech-stack {
-  max-width: 800px;
+  max-width: 1000px;
   margin: 20px auto;
-  padding: 5px;
-}
-
-.category h2 {
-  font-size: 1.5rem;
+  padding: 20px;
+  background-color: #0A0A0A;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   color: #fff;
-  margin-bottom: 10px;
 }
 
-/* Specific setup for evenly distributed columns */
-.category-items, .languages-items {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+.tech-stack h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+  color: #FFFFFF;
+}
+
+.category-row {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.category {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.category h3 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #61DAFB;
+  text-align: center;
+}
+
+.tech-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -24,40 +47,48 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 12px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 8px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  border-radius: 10px;
   transition: transform 0.3s;
-  min-width: 120px;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .tech-item:hover {
-  transform: scale(1.03);
+  transform: scale(1.05);
 }
 
 .tech-item svg {
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   margin-bottom: 5px;
 }
 
 .tech-item p {
-  font-size: 0.9rem;
-  color: #333;
+  font-size: 0.7rem;
+  margin: 0;
 }
 
 @media (max-width: 768px) {
-  .category-items, .languages-items {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    justify-items: center; /* Add this line to center the items */
+  .category-row {
+    flex-direction: column;
+    align-items: center;
   }
-  
+
+  .tech-item {
+    width: 70px;
+    height: 70px;
+  }
+
   .tech-item svg {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
   }
 
   .tech-item p {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 }

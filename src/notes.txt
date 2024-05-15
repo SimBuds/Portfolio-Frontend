@@ -1,6 +1,6 @@
 - add padding at the top of your sticky nav - DONE
 - Introductory copy should reflect the field you want to specialize in - DONE
-- Add an additional H2 - My Skills, move existing H2s to H3s
+- Add an additional H2 - My Skills, move existing H2s to H3s - DONE
 - check colour theory on tiles especially the ones that are extremely bright and contrasting with the text - redo sizing
 - expand what some main features for your projects in the descriptions - don't use terms like "simple" it down plays your capabilities
 - source some team mate references
