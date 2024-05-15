@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import axios from 'axios';
-import { FaCloud, FaCheckCircle } from 'react-icons/fa';
+import { FaCheckCircle } from 'react-icons/fa';
 import heroImage from '../assets/images/hero-image.jpg';
 import '../assets/HeroSection.css';
 
@@ -36,7 +36,7 @@ const HeroSection = () => {
           <div className="location-weather">
             {weather && (
               <p>
-                <FaCloud /> Based in {weather.weather[0].description}, {weather.name}. {Math.round(weather.main.temp)}°C
+                Based in {weather.name}, {weather.weather[0].description} <img src={`http://openweathermap.org/img/w/${weather.weather[0].icon}.png`} alt="weather icon" />. {Math.round(weather.main.temp)}°C
               </p>
             )}
           </div>
@@ -45,7 +45,7 @@ const HeroSection = () => {
               <FaCheckCircle style={{ color: 'green' }} /> Available for work from 2024 onwards
             </p>
           </div>
-          <Link to="/project" className="btn btn-outline-light">Visit Projects</Link>
+          <HashLink smooth to="/#projects" className="btn btn-outline-light">Featured Projects</HashLink>
         </div>
         <div className="col-md-6 hero-image">
           <img src={heroImage} alt="Casey Hsu" className="img-fluid"/>
