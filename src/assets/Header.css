@@ -1,38 +1,42 @@
 /* Header.css */
 .navbar {
-  position: relative; /* Ensure navbar has a positioning context */
   background-color: #000;
-  border-bottom: 2px solid #fff;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1rem;
+  border-bottom: 2px solid #ff4500;
+  padding: 0 2rem; /* Added padding */
   height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar-expand-lg > .container,
 .navbar-expand-lg > .container-fluid {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
 }
 
 .navbar-brand {
   display: flex;
   align-items: center;
-  margin-left: 1rem; /* Adjust this as necessary */
-  position: absolute; /* Makes brand positioning relative to navbar */
-  left: 10px; /* Keeps brand from touching the sides */
-  z-index: 10; /* Ensures it's above other elements */
+  margin-left: 2rem;
 }
 
 .navbar-brand img {
-  width: 60px; /* Increased size */
-  height: 60px; /* Increased size */
-  margin-right: 0.5rem; /* Space between logo and text */
-  border-radius: 50%; /* Makes the image round */
-  object-fit: cover; /* Ensures the image covers the area without distortion */
+  width: 60px;
+  height: 60px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.navbar-brand .brand-text {
+  color: #fff; /* Ensure font color is white */
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem; /* Adjust size as needed */
 }
 
 .navbar-center {
@@ -40,51 +44,69 @@
   justify-content: center;
   flex-grow: 1;
   align-items: center;
+  color: #fff; /* Ensure font color is white */
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem; /* Adjust size as needed */
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
 }
 
 .navbar-social {
-  margin-right: auto;
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
 }
 
 .nav-item {
   margin: 0 0.75rem;
 }
 
-.nav-link, .navbar-brand {
+.nav-link {
   color: #fff !important;
   font-family: 'Arial', sans-serif;
   text-transform: uppercase;
-  font-weight: normal;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 50px;
 }
 
 .nav-link:hover {
   background-color: #ff4500;
   color: #fff !important;
-}
-
-.navbar-right {
-  display: flex;
-  align-items: center;
+  border-radius: 50px;
 }
 
 .nav-link.btn-outline-light {
-  color: #fff; /* Set text color */
-  background-color: transparent; /* Set background */
-  border: 2px solid red; /* Red border */
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid red;
+  border-radius: 50px;
   font-size: 0.8rem;
   padding: 5px 10px;
+  color: #fff; /* Ensure font color is white */
+  font-family: 'Arial', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem; /* Adjust size as needed */
 }
 
-.nav-link.btn-outline-light:hover, .nav-link.btn-outline-light:focus, .nav-link.btn-outline-light:active {
-  background-color: red; /* Keep background red on hover, focus, and active */
-  color: #fff; /* Keep text white on hover, focus, and active */
+.nav-link.btn-outline-light:hover,
+.nav-link.btn-outline-light:focus,
+.nav-link.btn-outline-light:active {
+  background-color: red;
+  color: #fff;
 }
 
-/* If using React Router or similar, you might need to apply styles for the active class */
 .nav-link.btn-outline-light.active {
-  background-color: transparent; /* Ensures the background does not change */
-  color: #fff; /* Ensures the text color does not change */
-  border-color: red; /* Keeps the border color consistent */
+  background-color: transparent;
+  color: #fff;
+  border-color: red;
 }
 
 .navbar-toggler {
@@ -92,17 +114,17 @@
   margin-left: auto;
   padding: 0.5rem 1rem;
   color: #fff;
-  background-color: #ff4500; /* Bright color for visibility */
-  border: none; /* Remove default border */
-  font-size: 1.2rem; /* Larger font size for better visibility */
-  cursor: pointer; /* Indicates that it's clickable */
+  background-color: #ff4500;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
   .navbar-toggler {
-    position: absolute; /* Align toggler independently */
-    right: 10px; /* Distance from the right */
-    top: 20px; /* Distance from the top */
+    position: absolute;
+    right: 10px;
+    top: 20px;
   }
 
   .navbar-collapse {
@@ -111,14 +133,22 @@
     width: 100%;
   }
 
-  .navbar-brand, .navbar-center, .navbar-social, .navbar-right {
+  .navbar-brand,
+  .navbar-center,
+  .navbar-social,
+  .navbar-right {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .navbar-brand {
     margin-left: 0;
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .navbar-center {
+    margin-bottom: 0.5rem;
   }
 
   .nav-item {

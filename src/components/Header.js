@@ -17,11 +17,11 @@ const Header = () => {
             className="d-inline-block align-top"
             alt="Logo"
           />
-          Casey Hsu
+          <span className="brand-text">Casey Hsu</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mx-auto navbar-center">
+          <Nav className="navbar-center">
             <Nav.Item>
               <HashLink smooth to="/#projects" className="nav-link">Showcase</HashLink>
             </Nav.Item>
@@ -32,24 +32,24 @@ const Header = () => {
               <HashLink smooth to="/#aboutme" className="nav-link">About Me</HashLink>
             </Nav.Item>
           </Nav>
-          <Nav className="ml-auto navbar-social">
-            <Nav.Item>
-              <Nav.Link href="https://twitter.com/caseyhsuble" target="_blank">
-                <FontAwesomeIcon icon={faTwitter} />
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="https://github.com/SimBuds" target="_blank">
-                <FontAwesomeIcon icon={faGithub} />
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="https://www.linkedin.com/in/casey-hsu-750b39273" target="_blank">
-                <FontAwesomeIcon icon={faLinkedinIn} />
-              </Nav.Link>
-            </Nav.Item>
-          </Nav>
-          <Nav>
+          <Nav className="navbar-right">
+            <Nav className="navbar-social">
+              <Nav.Item>
+                <Nav.Link href="https://twitter.com/caseyhsuble" target="_blank">
+                  <FontAwesomeIcon icon={faTwitter} />
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="https://github.com/SimBuds" target="_blank">
+                  <FontAwesomeIcon icon={faGithub} />
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="https://www.linkedin.com/in/casey-hsu-750b39273" target="_blank">
+                  <FontAwesomeIcon icon={faLinkedinIn} />
+                </Nav.Link>
+              </Nav.Item>
+            </Nav>
             <Nav.Item>
               <Nav.Link as={NavLink} to="/contactme" className="btn btn-outline-light">Let's Chat</Nav.Link>
             </Nav.Item>
