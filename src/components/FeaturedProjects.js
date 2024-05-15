@@ -46,7 +46,7 @@ const projects = [
 
 const FeaturedProjects = () => {
   return (
-    <div className="featured-projects-wrapper">
+    <div className="featured-projects-wrapper" id="projects">
       <div className="project-header">
         <h2>Projects</h2>
         <p>Here you will find some of my personal and school projects that I created</p>
