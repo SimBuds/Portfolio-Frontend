@@ -22,10 +22,10 @@
     line-height: 1.6;
   }
   
-  .about-text h2 {
-    font-size: 2rem;
+  .about-text h3 {
+    font-size: 1.5rem;
     color: #FF474C;
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
   }
   
   .about-image img {

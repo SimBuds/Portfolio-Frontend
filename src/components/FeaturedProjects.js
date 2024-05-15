@@ -10,36 +10,36 @@ const projects = [
   {
     name: 'Menu Master RMS',
     image: project1Image,
-    description: 'A restaurant management system for the small to medium-sized business.',
-    tags: ['React', 'Node.js', 'MongoDB'],
+    description: 'This was a group capstone project for a restaurant management system that was I was responsible for the front-end development. It was a 2 semester SCRUM simulated project that was aimed at small to medium sized business to help manage their inventory, menu, and employee management and more.',
+    tags: ['React', 'Rust', 'MongoDB', 'Rocket'],
     link: 'https://github.com/SimBuds/menu-master-web'
   },
   {
     name: 'GT7 Race Tracker',
     image: project2Image,
-    description: 'An Application to track and manage racing events for Gran Turismo 7.',
+    description: 'Tasked with forming a group of 3 that would be responsibile for the idea, design and implementation of the project using Python. It was an desktop application that was aimed at Gran Turismo 7 players to help them track their lap times.',
     tags: ['Python', 'Flask', 'SQLite'],
     link: 'https://github.com/SimBuds/GT7-Racing-Program'
   },
   {
     name: 'Tic Tac Toe AI Mini-Max',
     image: project3Image,
-    description: 'Tick Tac Toe game with AI using Mini-Max algorithm.',
-    tags: ['Java', 'AI', 'JavaFX', 'Mini-Max'],
+    description: 'This project was given to us as a group in Data Structures and Algorithms class. We were tasked with creating a Tic Tac Toe game using JavaFX and implementing the Minimax algorithm to make the AI unbeatable. We learned the importance of recursion and how to implement the Minimax algorithm in a game like Tic Tac Toe.',
+    tags: ['Java', 'AI', 'JavaFX', 'Minimax'],
     link: 'https://github.com/SimBuds/TicTacToe-MiniMax'
   },
   {
-    name: 'JavaFX CRUD Quiz Game',
+    name: 'JavaFX Programming Quiz Game',
     image: project4Image,
-    description: 'A simple CRUD Quiz Game using JavaFX and SQLite.',
-    tags: ['JavaFX', 'SQLite', 'Java'],
+    description: 'In this project, we were tasked with creating a JavaFX application that would allow users to take a quiz. The quiz would be stored in a text file that the user would be able to see their score at the end of the quiz and the current leaderboard. We learned how to use JavaFX to create a GUI and how to read and write to a text file.',
+    tags: ['JavaFX', 'CRUD', 'Java'],
     link: 'https://github.com/SimBuds/JavaFX-CRUD-Quiz-Game'
   },
   {
-    name: 'Toronto Pearson Airport Flight System Application',
+    name: 'TPA Airport Flight System Application',
     image: project5Image,
-    description: 'A simple Flight System Application using CRUD and C#.',
-    tags: ['C#', 'ASP.NET'],
+    description: 'This was a semester 4 group project that was given to us in our Object Oriented Programming class. The purpose of this project was to teach us the importance of Object Oriented Programming and how to implement it in a real world application. We were tasked with creating a flight system that would allow users to book flights, view their flights, and cancel their flights. We learned how to use C# to create a desktop application that would allow users to interact with the flight system. We also learned how to use CRUD operations to interact with the database to store the user information and flight information',
+    tags: ['C#', 'ASP.NET', 'Data Structures', 'CRUD'],
     link: 'https://github.com/SimBuds/Flight-System-Using-CRUD-and-C-'
   }
 ];

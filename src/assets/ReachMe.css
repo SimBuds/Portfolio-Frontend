@@ -37,4 +37,6 @@
   background-color: #fff;
   color: #FF474C !important;
   text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
 }

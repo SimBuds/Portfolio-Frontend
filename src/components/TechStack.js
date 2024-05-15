@@ -5,7 +5,6 @@ import {
   siPostgresql, siLinux, siApple, siWindows,
   siDotnet, siSpringboot, siReact, siAngular,
   siDocker, siPostman, siGit
-  
 } from 'simple-icons/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';

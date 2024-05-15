@@ -5,6 +5,8 @@ import TechStack from '../components/TechStack.js';
 import FeaturedProjects from '../components/FeaturedProjects.js';
 import AboutMe from '../components/AboutMe.js';
 import ReachMe from '../components/ReachMe.js';
+import PoweredBy from '../components/PoweredBy.js';
+
 import '../assets/Home.css';
 
 const Home = () => {
@@ -22,8 +24,11 @@ const Home = () => {
       <section aria-label="About Me">
         <AboutMe />
       </section>
-      <section aria-label="Call to Action">
+      <section aria-label="Reach Me">
         <ReachMe />
+      </section>
+      <section aria-label="Powered By">
+        <PoweredBy />
       </section>
     </Container>
   );

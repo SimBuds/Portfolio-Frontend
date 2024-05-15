@@ -28,10 +28,10 @@ const HeroSection = () => {
     <div className="hero-section container">
       <div className="row align-items-center">
         <div className="col-md-6 hero-text">
-          <h1>Hi, I'm Casey Hsu</h1>
+          <h1>Future Full Stack Javascript Developer</h1>
           <p className="lead">
-            My current goal is to become a junior Javascript developer that will work with a team to build and manage applications. 
-            I recently graduated from George Brown College with honours in Computer Programming and Analysis.
+            Hi, I'm Casey Hsu and my current goal is to become a junior Javascript developer that will work with a team to build 
+            and manage applications. I recently graduated from George Brown College with honours in Computer Programming and Analysis.
           </p>
           <div className="location-weather">
             {weather && (
@@ -39,11 +39,13 @@ const HeroSection = () => {
                 <FaCloud /> Based in {weather.weather[0].description}, {weather.name}. {Math.round(weather.main.temp)}°C
               </p>
             )}
+          </div>
+          <div className="availability">
             <p>
               <FaCheckCircle style={{ color: 'green' }} /> Available for work from 2024 onwards
             </p>
           </div>
-          <Link to="/project" className="btn btn-outline-light">Visit My Projects</Link>
+          <Link to="/project" className="btn btn-outline-light">Visit Projects</Link>
         </div>
         <div className="col-md-6 hero-image">
           <img src={heroImage} alt="Casey Hsu" className="img-fluid"/>

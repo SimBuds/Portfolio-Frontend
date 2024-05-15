@@ -4,7 +4,7 @@
   background-color: #121212;
   border-bottom: 2px solid #ff4500;
   padding: 0 1rem;
-  height: 70px;
+  height: 75px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,7 +21,7 @@
 .navbar-brand {
   display: flex;
   align-items: center;
-  margin-left: 0.5rem;
+  margin-left: 1.5rem;
 }
 
 .navbar-brand img {
@@ -59,7 +59,7 @@
 .navbar-right {
   display: flex;
   align-items: center;
-  margin-right: 0.5rem;
+  margin-right: 1.5rem;
 }
 
 .navbar-social {
@@ -142,12 +142,12 @@
   }
 
   .navbar-collapse {
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(10px);
-    border-top: 1px solid #fff;
+    background-color: #000;
+    border-top: 1px solid;
     width: 100%;
     text-align: center;
     margin-top: 10px;
+    border-bottom: 2px solid #ff4500;
   }
 
   .navbar-center,
