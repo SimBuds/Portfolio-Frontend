@@ -6,7 +6,7 @@ const ReachMe = () => {
     return (
         <div className="reach-me">
             <h1>Would you like to work with me?</h1>
-            <p>I'd love to learn more. Hit the button below to get in touch!</p>
+            <p>If you would love to learn more information or would like to request to work with me feel free to hit the button below to get in touch.</p>
             <Link to="/contactme" className="reach-me-button">Let's chat</Link>
         </div>
     );

@@ -1,8 +1,8 @@
 .hero-section {
   color: white;
-  background-color: #000; /* Consistent dark theme */
+  background-color: #000;
   margin: 0 auto;
-  padding: 2rem; /* Uniform padding */
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +13,7 @@
   max-width: 100%;
   padding: 2rem;
   box-sizing: border-box;
-  text-align: center; /* Center alignment for text */
+  text-align: center;
 }
 
 .hero-image {
@@ -27,13 +27,13 @@
 .hero-image img {
   width: 100%;
   height: auto;
-  object-fit: cover; /* Ensures the image is properly scaled */
+  object-fit: cover;
 }
 
 @media (min-width: 768px) {
   .hero-section {
-    flex-direction: row; /* Side-by-side layout for larger screens */
-    text-align: left; /* Text alignment for non-mobile views */
+    flex-direction: row;
+    text-align: left;
   }
 
   .hero-text, .hero-image {
@@ -42,10 +42,10 @@
   }
 
   .hero-text {
-    padding-right: 1rem; /* Right padding for spacing between text and image */
+    padding-right: 1rem;
   }
 
   .hero-image {
-    padding-left: 1rem; /* Left padding for spacing */
+    padding-left: 1rem;
   }
 }

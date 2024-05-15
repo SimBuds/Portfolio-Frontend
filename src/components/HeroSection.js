@@ -12,7 +12,7 @@ const HeroSection = () => {
           <p className="lead">
             A Web Developer building and managing Websites and Web Applications that leads to the success of the overall products.
           </p>
-          <Link to="/project" className="btn btn-outline-light">Visit My Repo</Link>
+          <Link to="/project" className="btn btn-outline-light">Visit My Projects</Link>
         </div>
         <div className="col-md-6 hero-image">
           <img src={heroImage} alt="Casey Hsu" className="img-fluid"/>

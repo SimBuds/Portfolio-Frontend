@@ -23,7 +23,7 @@ const Header = () => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="navbar-center">
             <Nav.Item>
-              <HashLink smooth to="/#projects" className="nav-link">Showcase</HashLink>
+              <HashLink smooth to="/#showcase" className="nav-link">Showcase</HashLink>
             </Nav.Item>
             <Nav.Item>
               <Nav.Link as="a" href={`${process.env.PUBLIC_URL}/resume.pdf`} target="_blank">Resume</Nav.Link>

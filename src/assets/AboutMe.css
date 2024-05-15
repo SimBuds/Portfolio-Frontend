@@ -1,8 +1,10 @@
+/* AboutMe.css */
+
 .about-section {
     color: white;
     background: #121212;
     margin: 0 auto;
-    padding: 2rem; /* Top and bottom padding */
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,26 +13,26 @@
   .container {
     max-width: 1140px;
     margin: 0 auto;
-    padding: 0 15px; /* Padding on sides */
+    padding: 0 15px;
   }
   
   .about-text {
     text-align: left;
-    font-size: 1.2rem; /* Adjust the font size as needed */
-    line-height: 1.6; /* Line height for better readability */
+    font-size: 1.2rem;
+    line-height: 1.6;
   }
   
   .about-text h2 {
-    font-size: 2rem; /* Larger font size for the heading */
-    color: #FF474C; /* Red color for heading */
-    margin-bottom: 1rem; /* Space below the heading */
+    font-size: 2rem;
+    color: #FF474C;
+    margin-bottom: 1rem
   }
   
   .about-image img {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Rounded corners for the image */
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Shadow for depth */
+    border-radius: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   }
   
   @media (min-width: 768px) {
@@ -44,10 +46,10 @@
     }
   
     .about-text {
-      padding-right: 1rem; /* Right padding for spacing */
+      padding-right: 1rem;
     }
   
     .about-image {
-      padding-left: 1rem; /* Left padding for spacing */
+      padding-left: 1rem;
     }
   }  

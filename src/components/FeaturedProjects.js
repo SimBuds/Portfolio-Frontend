@@ -81,8 +81,8 @@ const handleMouseMove = (e) => {
   return (
     <div className="featured-projects-wrapper" id="projects">
       <div className="project-header">
-        <h2>Projects</h2>
-        <p>Here you will find some of my school and personal projects that I have created so far.</p>
+        <h2>Featured Projects:</h2>
+        <p>Here you will find some of my personal and school projects that I have created so far!</p>
       </div>
       <div ref={projectsRef}
            className="featured-projects"

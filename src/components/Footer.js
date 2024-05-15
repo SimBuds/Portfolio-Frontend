@@ -19,7 +19,9 @@ const Footer = () => {
                         <FontAwesomeIcon icon={faLinkedinIn} size="lg" />
                     </a>
                 </div>
-                <p>Casey Hsu's Portfolio</p>
+                <div className="footer-text">
+                    <p>© 2024 Casey Hsu. All rights reserved.</p>
+                </div>
             </Container>
         </footer>
     );

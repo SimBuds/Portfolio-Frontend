@@ -1,14 +1,16 @@
+/* ContactMe.css */
+
 .contact-page {
     display: flex;
-    flex-direction: column; /* Ensure items are stacked vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh; /* Set height to full viewport height */
-    padding: 20px; /* Add padding around the content */
+    height: 90vh;
+    padding: 20px;
 }
 
 .contact-form {
-    width: 100%; /* Set width to full to use max-width effectively */
+    width: 100%;
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
