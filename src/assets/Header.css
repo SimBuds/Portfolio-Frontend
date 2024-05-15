@@ -1,8 +1,8 @@
 /* Header.css */
 .navbar {
   background-color: #000;
-  border-bottom: 2px solid #ff4500;
-  padding: 0 2rem; /* Added padding */
+  border-bottom: 3px solid #ff4500;
+  padding: 0 2rem;
   height: 90px;
   display: flex;
   align-items: center;
@@ -20,7 +20,7 @@
 .navbar-brand {
   display: flex;
   align-items: center;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
 }
 
 .navbar-brand img {
@@ -32,35 +32,36 @@
 }
 
 .navbar-brand .brand-text {
-  color: #fff; /* Ensure font color is white */
-  font-family: 'Arial', sans-serif;
+  color: #fff;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.1rem; /* Adjust size as needed */
+  font-size: 1.1rem;
 }
+
+.navbar-brand .brand-text:hover {
+  color: #ff4500 !important;
+  }
 
 .navbar-center {
   display: flex;
   justify-content: center;
-  flex-grow: 1;
   align-items: center;
-  color: #fff; /* Ensure font color is white */
-  font-family: 'Arial', sans-serif;
+  color: #fff;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.1rem; /* Adjust size as needed */
+  font-size: 1.1rem;
+  flex-grow: 1;
 }
 
 .navbar-right {
   display: flex;
   align-items: center;
-  margin-right: 2rem;
+  margin-right: 1.5rem;
 }
 
 .navbar-social {
   display: flex;
   align-items: center;
-  margin-right: 0.5rem;
 }
 
 .nav-item {
@@ -69,7 +70,6 @@
 
 .nav-link {
   color: #fff !important;
-  font-family: 'Arial', sans-serif;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.1rem;
@@ -83,37 +83,32 @@
 }
 
 .nav-link.btn-outline-light {
-  color: #fff;
   background-color: transparent;
-  border: 2px solid red;
+  border: 3px solid #ff4500;
   border-radius: 50px;
   font-size: 0.8rem;
-  padding: 5px 10px;
-  color: #fff; /* Ensure font color is white */
-  font-family: 'Arial', sans-serif;
+  padding: 10px 10px;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.1rem; /* Adjust size as needed */
+  font-size: 1.1rem;
 }
 
 .nav-link.btn-outline-light:hover,
 .nav-link.btn-outline-light:focus,
 .nav-link.btn-outline-light:active {
-  background-color: red;
-  color: #fff;
+  background-color: #ff4500;
+  border-color: #ff4500;
 }
 
 .nav-link.btn-outline-light.active {
   background-color: transparent;
-  color: #fff;
-  border-color: red;
+  border-color: #ff4500;
 }
 
 .navbar-toggler {
   display: block;
   margin-left: auto;
   padding: 0.5rem 1rem;
-  color: #fff;
   background-color: #ff4500;
   border: none;
   font-size: 1.2rem;
