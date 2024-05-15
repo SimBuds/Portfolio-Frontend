@@ -6,6 +6,7 @@ import {
   siLinux, siApple, siWindows,
   siDotnet, siSpringboot, siReact, siAngular,
   siDocker, siPostman, siGit
+  
 } from 'simple-icons/icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCoffee } from '@fortawesome/free-solid-svg-icons';
@@ -51,23 +52,26 @@ const techCategories = {
 function TechStack() {
   return (
     <div className="tech-stack">
-      {Object.entries(techCategories).map(([category, techs]) => (
-        <div className="category" key={category}>
-          <h2>{category}</h2>
-          <div className={`${category === "Programming Languages:" ? 'languages-items' : 'category-items'}`}>
-            {techs.map(tech => (
-              <div className="tech-item" key={tech.name} style={{ backgroundColor: tech.color }}>
-                {React.isValidElement(tech.icon) ? (
-                  tech.icon
-                ) : (
-                  <svg viewBox="0 0 24 24" dangerouslySetInnerHTML={{ __html: tech.icon.svg }} />
-                )}
-                <p>{tech.name}</p>
-              </div>
-            ))}
+      <div className="title">
+        <h2>My Tech Stack</h2>
+        {Object.entries(techCategories).map(([category, techs]) => (
+          <div className="category" key={category}>
+            <h4>{category}</h4>
+            <div className={`${category === "Programming Languages:" ? 'languages-items' : 'category-items'}`}>
+              {techs.map(tech => (
+                <div className="tech-item" key={tech.name} style={{ backgroundColor: tech.color }}>
+                  {React.isValidElement(tech.icon) ? (
+                    tech.icon
+                  ) : (
+                    <svg viewBox="0 0 24 24" dangerouslySetInnerHTML={{ __html: tech.icon.svg }} />
+                  )}
+                  <p>{tech.name}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
       ))}
+      </div>
     </div>
   );
 }

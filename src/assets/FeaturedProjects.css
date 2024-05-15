@@ -26,23 +26,18 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-  gap: 20px; /* Space between image and content */
+  gap: 20px;
 }
 
 .project-image {
-  max-width: 100%;
-  padding: 10px; /* Add some padding around the image */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .project-image img {
   width: 100%;
-  height: 250px; /* Set a larger fixed height for the images */
-  object-fit: cover; /* Ensure images cover the defined space */
-  display: block;
-  border-radius: 10px;
+  height: 100%;
 }
 
 .project-content {
@@ -50,8 +45,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Center content */
-  text-align: center; /* Center text */
+  align-items: center;
+  text-align: center;
 }
 
 .project-content h3 {
@@ -61,16 +56,16 @@
 
 .project-content p {
   margin: 10px 0;
-  padding: 0 20px; /* Add padding for better readability */
+  padding: 0 20px;
 }
 
 .project-technologies {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  justify-content: center; /* Center tags */
+  justify-content: center;
   margin-top: 10px;
-  padding: 0 20px; /* Add padding for better readability */
+  padding: 0 20px;
 }
 
 .tag {
@@ -78,20 +73,29 @@
   border-radius: 5px;
   padding: 5px 10px;
   font-size: 0.85rem;
+  margin-bottom: 1rem;
 }
 
 button {
   padding: 10px 20px;
-  background-color: #444;
+  background-color: #FF474C;
   color: white;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
 }
 
 button:hover {
-  background-color: #555;
+  background-color: white;
+  color: #FF474C;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 0px;
 }
 
 @media (max-width: 768px) {
@@ -99,7 +103,13 @@ button:hover {
     grid-template-columns: 1fr;
   }
 
+  .project-image {
+    width: 100%;
+    height: auto;
+  }
+
   .project-image img {
+    width: 100%;
     height: auto;
   }
 
@@ -109,6 +119,15 @@ button:hover {
   }
 
   button {
-    align-self: center; /* Center the button on smaller screens */
+    align-self: center;
+  }
+  
+  /* Add the following code to fix mobile scaling */
+  .featured-projects-wrapper {
+    padding: 20px; /* Reduce the padding for better mobile scaling */
+  }
+  
+  .project-card {
+    grid-template-columns: 1fr; /* Change to a single column layout for better mobile scaling */
   }
 }

@@ -49,7 +49,7 @@ const FeaturedProjects = () => {
     <div className="featured-projects-wrapper">
       <div className="project-header">
         <h2>Projects</h2>
-        <p>Here you will find some of the personal and school projects that I created with each project containing its own case study</p>
+        <p>Here you will find some of my personal and school projects that I created</p>
       </div>
       <div className="featured-projects">
         {projects.map((project, index) => (
@@ -65,7 +65,7 @@ const FeaturedProjects = () => {
                   <span key={tag} className="tag">{tag}</span>
                 ))}
               </div>
-              <button onClick={() => window.open(project.link, '_blank')}>Case Study</button>
+              <button onClick={() => window.open(project.link, '_blank')}>Visit Repo</button>
             </div>
           </div>
         ))}
