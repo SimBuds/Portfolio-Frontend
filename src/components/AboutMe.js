@@ -9,9 +9,10 @@ const AboutMe = () => {
         <div className="row align-items-center">
           <div className="col-md-8 about-text">
             <h3>Get to know me</h3>
-            <p>I have been a professional chef for 9 years but decided during Covid I decided to take the 
-              opportunity to change industries for my passion in computers and programming. I built my first 
-              computer when I was 8 years old and I have been a big fan boy of technology ever since.</p>
+            <p>During the COVID-19 pandemic, I decided to pursue my long-standing passion for computers and programming, 
+              transitioning from my nine-year career as a professional chef. My interest in technology began at the age 
+              of eight when I built my first computer, and I have been deeply enthusiastic about the field ever since.
+            </p>
           </div>
           <div className="col-md-4 about-image">
             <img src={aboutImage} alt="Casey Hsu" className="img-fluid"/>

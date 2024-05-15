@@ -20,20 +20,20 @@ const techCategories = {
     { name: 'Android', color: '#3DDC84', icon: siAndroid }
   ],
   "Databases": [
-    { name: 'Oracle', color: '#F80000', icon: siOracle },
-    { name: 'MySQL', color: '#4479A1', icon: siMysql },
     { name: 'MongoDB', color: '#47A248', icon: siMongodb },
-    { name: 'Postgres', color: '#336791', icon: siPostgresql }
+    { name: 'Postgres', color: '#336791', icon: siPostgresql },
+    { name: 'MySQL', color: '#4479A1', icon: siMysql },
+    { name: 'Oracle', color: '#F80000', icon: siOracle }
   ],
   "Operating Systems": [
     { name: 'Linux', color: '#FCC624', icon: siLinux },
+    { name: 'Windows', color: '#0078D6', icon: siWindows },
     { name: 'Mac', color: '#A2AAAD', icon: siApple },
-    { name: 'Windows', color: '#0078D6', icon: siWindows }
   ],
   "Frameworks": [
-    { name: 'ASP.NET', color: '#512BD4', icon: siDotnet },
-    { name: 'Spring', color: '#6DB33F', icon: siSpringboot },
     { name: 'React', color: '#61DAFB', icon: siReact },
+    { name: 'Spring', color: '#6DB33F', icon: siSpringboot },
+    { name: 'ASP.NET', color: '#512BD4', icon: siDotnet },
     { name: 'Angular', color: '#DD0031', icon: siAngular }
   ],
   "Tools": [
