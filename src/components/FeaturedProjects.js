@@ -1,5 +1,4 @@
-import React, { useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import '../assets/FeaturedProjects.css';
 import project1Image from '../assets/images/project1.png';
 import project2Image from '../assets/images/project2.png';
@@ -46,68 +45,29 @@ const projects = [
 ];
 
 const FeaturedProjects = () => {
-  const [activeIndex] = useState(0);
-  const projectsRef = useRef(null);
-  let isDown = false;
-  let startX;
-  let scrollLeft;
-
-
-const handleMouseDown = (e) => {
-  isDown = true;
-  startX = e.pageX - projectsRef.current.offsetLeft;
-  scrollLeft = projectsRef.current.scrollLeft;
-  projectsRef.current.style.cursor = 'grabbing';
-};
-
-const handleMouseLeave = () => {
-  isDown = false;
-  projectsRef.current.style.cursor = 'grab';
-};
-
-const handleMouseUp = () => {
-  isDown = false;
-  projectsRef.current.style.cursor = 'grab';
-};
-
-const handleMouseMove = (e) => {
-  if (!isDown) return;
-  e.preventDefault();
-  const x = e.pageX - projectsRef.current.offsetLeft;
-  const walk = (x - startX);
-  projectsRef.current.scrollLeft = scrollLeft - walk;
-};
-  
   return (
-    <div className="featured-projects-wrapper" id="projects">
+    <div className="featured-projects-wrapper">
       <div className="project-header">
-        <h2>Featured Projects:</h2>
-        <p>Here you will find some of my personal and school projects that I have created so far!</p>
+        <h2>Projects</h2>
+        <p>Here you will find some of the personal and school projects that I created with each project containing its own case study</p>
       </div>
-      <div ref={projectsRef}
-           className="featured-projects"
-           onMouseDown={handleMouseDown}
-           onMouseLeave={handleMouseLeave}
-           onMouseUp={handleMouseUp}
-           onMouseMove={handleMouseMove}>
-        {projects.map(project => (
-          <div key={project.name} className="project-card">
-            <Link to={project.link}>
-              <img src={project.image} alt={project.name} className="project-image"/>
-              <div className="project-info">
-                <h3>{project.name}</h3>
-                <p>{project.description}</p>
-                <div className="project-tags">
-                  {project.tags.map(tag => <span key={tag} className="tag">{tag}</span>)}
-                </div>
+      <div className="featured-projects">
+        {projects.map((project, index) => (
+          <div className="project-card" key={index}>
+            <div className="project-image">
+              <img src={project.image} alt={project.name} />
+            </div>
+            <div className="project-content">
+              <h3>{project.name}</h3>
+              <p>{project.description}</p>
+              <div className="project-technologies">
+                {project.tags.map(tag => (
+                  <span key={tag} className="tag">{tag}</span>
+                ))}
               </div>
-            </Link>
+              <button onClick={() => window.open(project.link, '_blank')}>Case Study</button>
+            </div>
           </div>
-        ))}
-      </div>
-      <div className="scroll-indicators">
-        {projects.map((_, index) => (
-          <div key={index} className={`dot ${index === activeIndex ? 'active' : ''}`}></div>
         ))}
       </div>
     </div>

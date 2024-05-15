@@ -102,16 +102,6 @@
   color: #FF474C !important;
 }
 
-.navbar-toggler {
-  display: block;
-  margin-left: auto;
-  padding: 0.5rem 1rem;
-  background-color: #ff4500;
-  border: none;
-  font-size: 1rem;
-  cursor: pointer;
-}
-
 @media (max-width: 768px) {
   .navbar {
     background-color: rgba(0, 0, 0, 0.5);
