@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { HashLink } from 'react-router-hash-link';
 import axios from 'axios';
 import { FaCheckCircle } from 'react-icons/fa';
 import heroImage from '../assets/images/hero-image.jpg';
@@ -45,7 +44,6 @@ const HeroSection = () => {
               <FaCheckCircle style={{ color: 'green' }} /> Available for work from 2024 onwards
             </p>
           </div>
-          <HashLink smooth to="/#projects" className="btn btn-outline-light">Featured Projects</HashLink>
         </div>
         <div className="col-md-6 hero-image">
           <img src={heroImage} alt="Casey Hsu" className="img-fluid"/>
