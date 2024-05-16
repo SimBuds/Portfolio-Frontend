@@ -22,16 +22,16 @@
 
 .reach-me-button {
   background-color: #FF474C;
-  color: #000;
-  font-weight: bold;
+  color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 10px 30px;
-  font-size: 0.9rem;
+  padding: 10px 20px;
+  font-size: 1rem;
   text-transform: uppercase;
-  text-decoration: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease-in-out;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .reach-me-button:hover {

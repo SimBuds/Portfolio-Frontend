@@ -94,6 +94,7 @@
   text-transform: uppercase;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease-in-out;
+  font-weight: bold;
 }
 
 .btn.btn-outline-light:hover,

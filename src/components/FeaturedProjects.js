@@ -17,7 +17,7 @@ const projects = [
   {
     name: 'Gran Turismo 7 Race Tracker',
     image: project2Image,
-    description: 'Start your engines! Using Phyton, this companion desktop application was created to help gamers track their laps in Gran Turismo 7. The player can select their desired racing map to record their best lap times and compare against other players on the leaderboard. ',
+    description: 'Start your engines! Using Python, this companion desktop application was created to help gamers track their laps in Gran Turismo 7. The player can select their desired racing map to record their best lap times and compare against other players on the leaderboard.',
     tags: ['Python', 'Flask', 'SQLite'],
     link: 'https://github.com/SimBuds/GT7-Racing-Program'
   },
@@ -54,18 +54,24 @@ const FeaturedProjects = () => {
       <div className="featured-projects">
         {projects.map((project, index) => (
           <div className="project-card" key={index}>
-            <div className="project-image">
-              <img src={project.image} alt={project.name} />
-            </div>
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-image-link">
+              <div className="project-image">
+                <img src={project.image} alt={project.name} />
+              </div>
+            </a>
             <div className="project-content">
-              <h3>{project.name}</h3>
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-title-link">
+                <h3>{project.name}</h3>
+              </a>
               <p>{project.description}</p>
               <div className="project-technologies">
                 {project.tags.map(tag => (
                   <span key={tag} className="tag">{tag}</span>
                 ))}
               </div>
-              <button onClick={() => window.open(project.link, '_blank')}>Visit Repo</button>
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                Visit Repo
+              </a>
             </div>
           </div>
         ))}

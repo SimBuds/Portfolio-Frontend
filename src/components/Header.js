@@ -26,7 +26,7 @@ const Header = () => {
               <HashLink smooth to="/#projects" className="nav-link">Showcase</HashLink>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link as="a" href={`${process.env.PUBLIC_URL}/resume.pdf`}>Resume</Nav.Link>
+              <a href={`${process.env.PUBLIC_URL}/resume.pdf`} className="nav-link">Resume</a>
             </Nav.Item>
             <Nav.Item>
               <HashLink smooth to="/#aboutme" className="nav-link">About Me</HashLink>
@@ -35,23 +35,23 @@ const Header = () => {
           <Nav className="navbar-right">
             <Nav className="navbar-social">
               <Nav.Item>
-                <Nav.Link href="https://twitter.com/caseyhsuble" target="_blank">
+                <a href="https://twitter.com/caseyhsuble" target="_blank" rel="noopener noreferrer" className="nav-link">
                   <FontAwesomeIcon icon={faTwitter} />
-                </Nav.Link>
+                </a>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="https://github.com/SimBuds" target="_blank">
+                <a href="https://github.com/SimBuds" target="_blank" rel="noopener noreferrer" className="nav-link">
                   <FontAwesomeIcon icon={faGithub} />
-                </Nav.Link>
+                </a>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link href="https://www.linkedin.com/in/casey-hsu-750b39273" target="_blank">
+                <a href="https://www.linkedin.com/in/casey-hsu-750b39273" target="_blank" rel="noopener noreferrer" className="nav-link">
                   <FontAwesomeIcon icon={faLinkedinIn} />
-                </Nav.Link>
+                </a>
               </Nav.Item>
             </Nav>
             <Nav.Item>
-              <Nav.Link as={NavLink} to="/contactme" className="btn btn-outline-light">Let's Chat</Nav.Link>
+              <NavLink to="/contactme" className="btn btn-outline-light">Let's Chat</NavLink>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

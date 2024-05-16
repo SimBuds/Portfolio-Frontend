@@ -12,7 +12,7 @@
   margin-bottom: 20px;
 }
 
-.project-header h2{
+.project-header h2 {
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 20px;
@@ -20,7 +20,7 @@
   font-weight: bold;
 }
 
-.project-header h2::after{
+.project-header h2::after {
   content: "";
   display: block;
   width: 50px;
@@ -28,7 +28,8 @@
   background: #FF474C;
   margin: 20px auto;
 }
-.project-header p{
+
+.project-header p {
   padding-bottom: 20px;
 }
 
@@ -63,6 +64,17 @@
   object-fit: cover;
   display: block;
   border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-image a {
+  display: block;
+  border: none;
+  text-decoration: none;
+}
+
+.project-image img:hover {
+  transform: scale(1.05);
 }
 
 .project-content {
@@ -78,6 +90,17 @@
   margin: 0;
   font-size: 1.5rem;
   color: #47FFFA;
+  transition: color 0.3s ease-in-out;
+}
+
+.project-content a {
+  color: inherit;
+  text-decoration: none;
+  border: none;
+}
+
+.project-content h3:hover {
+  color: #FF474C;
 }
 
 .project-content p {
@@ -102,26 +125,26 @@
   margin-bottom: 1rem;
 }
 
-button {
+.project-link {
+  display: inline-block;
   padding: 10px 20px;
   background-color: #FF474C;
   color: #121212;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   font-size: 1rem;
   font-weight: bold;
   text-transform: uppercase;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease-in-out;
   margin-top: 20px;
+  text-decoration: none;
 }
 
-button:hover {
-  background-color: white;
+.project-link:hover {
+  background-color: #FFFFFF;
   color: #FF474C;
   font-weight: bold;
-  border-radius: 10px;
-  font-size: 1rem;
 }
 
 @media (max-width: 768px) {
@@ -144,16 +167,20 @@ button:hover {
     text-align: center;
   }
 
-  button {
+  .project-link {
     align-self: center;
   }
-  
-  /* Add the following code to fix mobile scaling */
+
   .featured-projects-wrapper {
-    padding: 20px; /* Reduce the padding for better mobile scaling */
+    padding: 20px;
   }
-  
+
   .project-card {
-    grid-template-columns: 1fr; /* Change to a single column layout for better mobile scaling */
+    grid-template-columns: 1fr;
+  }
+
+  .project-content h3 {
+    order: -1;
+    margin-bottom: 10px;
   }
 }

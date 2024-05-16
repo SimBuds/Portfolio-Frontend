@@ -1,67 +1,74 @@
 /* AboutMe.css */
 
 .about-section {
-    color: white;
-    background: #121212;
-    margin: 0 auto;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .container {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
+  color: white;
+  background: #121212;
+  margin: 0 auto;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .container h2 {
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #FFFFFF;
-    padding-bottom: 10px;
-    font-weight: bold;
-  }
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
-  .container h2::after{
-    content: "";
-    display: block;
-    width: 50px;
-    height: 3px;
-    background: #FF474C;
-    margin: 20px auto;
-  }
-  
-  .about-text {
-    text-align: left;
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  
-  .about-image img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  @media (min-width: 768px) {
-    .about-section .row {
+.container h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+.container h2::after{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #FF474C;
+  margin: 20px auto;
+}
+
+.about-text {
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@media (min-width: 768px) {
+  .about-section .row {
       text-align: center;
-    }
-  
-    .about-text, .about-image {
+  }
+
+  .about-text, .about-image {
       flex-basis: 50%;
       max-width: 50%;
-    }
-  
-    .about-text {
+      text-align: center;
+  }
+
+  .about-text {
       padding-right: 1rem;
-    }
-  
-    .about-image {
+  }
+
+  .about-image {
       padding-left: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+    .about-text {
+        text-align: center;
     }
-  }  
+} 

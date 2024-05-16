@@ -16,7 +16,8 @@
   color: #FFFFFF;
   font-weight: bold;
 }
-.tech-stack h2::after{
+
+.tech-stack h2::after {
   content: "";
   display: block;
   width: 50px;
@@ -83,6 +84,10 @@
 }
 
 @media (max-width: 768px) {
+  .tech-stack p {
+    text-align: center;
+  }
+
   .category-row {
     flex-direction: column;
     align-items: center;
