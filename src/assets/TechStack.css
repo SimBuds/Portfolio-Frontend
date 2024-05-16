@@ -5,7 +5,6 @@
   margin: 20px auto;
   padding: 20px;
   background-color: #0A0A0A;
-  border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   color: #fff;
 }
@@ -13,8 +12,18 @@
 .tech-stack h2 {
   font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   color: #FFFFFF;
+  font-weight: bold;
+}
+.tech-stack h2::after{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #FF474C;
+  margin: 20px auto;
+  margin-bottom: -5px;
 }
 
 .category-row {
@@ -30,6 +39,7 @@
 
 .category h3 {
   font-size: 1rem;
+  margin-top: 50px;
   margin-bottom: 5px;
   color: #61DAFB;
   text-align: center;
@@ -49,7 +59,7 @@
   justify-content: center;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.1);
-  color: #fff;
+  color: #000000;
   border-radius: 10px;
   transition: transform 0.3s;
   width: 80px;

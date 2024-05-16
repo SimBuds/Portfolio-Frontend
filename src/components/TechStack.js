@@ -46,7 +46,8 @@ const techCategories = {
 function TechStack() {
   return (
     <div className="tech-stack">
-      <h2>My Tech Stack</h2>
+      <h2>MY TECH STACK</h2>
+      <p>Check out my tech stack, to see which tools and languages I'm most comfortable with.</p>
       <div className="category-row">
         {['Operating Systems', 'Programming Languages', 'Tools'].map(category => (
           <div className="category" key={category}>

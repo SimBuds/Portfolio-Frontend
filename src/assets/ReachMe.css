@@ -22,7 +22,8 @@
 
 .reach-me-button {
   background-color: #FF474C;
-  color: #fff;
+  color: #000;
+  font-weight: bold;
   border: none;
   border-radius: 5px;
   padding: 10px 30px;

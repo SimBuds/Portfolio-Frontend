@@ -31,14 +31,14 @@ const projects = [
   {
     name: 'JavaFX Programming Quiz Game',
     image: project4Image,
-    description: 'For this project, we developed a JavaFX application designed to deliver an engaging quiz experience. Users can take quizzes, view their scores upon completion, and check the current leaderboard, all stored and managed through a text file. This project not only enhanced our skills in creating graphical user interfaces with JavaFX but also in handling file operations for reading and writing data.',
+    description: 'This JavaFX application delivers an engaging quiz experience. Users can take quizzes, view their scores, and check the current leaderboard, all stored and managed through a text file.',
     tags: ['JavaFX', 'CRUD', 'Java'],
     link: 'https://github.com/SimBuds/JavaFX-CRUD-Quiz-Game'
   },
   {
     name: 'Airport Flight System Application',
     image: project5Image,
-    description: 'This project aimed to emphasize the importance of Object-Oriented Programming (OOP) and its practical implementation in real-world applications. Our task was to develop a flight booking system where users could book, view, and cancel flights. Using C#, we created a desktop application to facilitate user interaction with the system. Additionally, we employed CRUD operations to manage user and flight information in the database, ensuring efficient data handling and storage. This project provided valuable insights into OOP principles and database management within the context of application development.',
+    description: 'Ready for take-off? Using C# and Object-Oriented Programming (OOP), this flight management system allows you to book, view and cancel your flights. Additionally, it uses CRUD operations for efficient user and flight data management.',
     tags: ['C#', 'ASP.NET', 'Data Structures', 'CRUD'],
     link: 'https://github.com/SimBuds/Flight-System-Using-CRUD-and-C-'
   }
@@ -48,8 +48,8 @@ const FeaturedProjects = () => {
   return (
     <div className="featured-projects-wrapper" id="projects">
       <div className="project-header">
-        <h2>Projects</h2>
-        <p>Here you will find some of my personal and school projects that I created</p>
+        <h2>FEATURED PROJECTS</h2>
+        <p>Explore my portfolio, showcasing some of my most intriguing and innovative projects.</p>
       </div>
       <div className="featured-projects">
         {projects.map((project, index) => (

@@ -12,6 +12,26 @@
   margin-bottom: 20px;
 }
 
+.project-header h2{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.project-header h2::after{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #FF474C;
+  margin: 20px auto;
+}
+.project-header p{
+  padding-bottom: 20px;
+}
+
 .featured-projects {
   display: flex;
   flex-direction: column;
@@ -57,6 +77,7 @@
 .project-content h3 {
   margin: 0;
   font-size: 1.5rem;
+  color: #47FFFA;
 }
 
 .project-content p {
@@ -84,10 +105,11 @@
 button {
   padding: 10px 20px;
   background-color: #FF474C;
-  color: white;
+  color: #121212;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 1rem;
+  font-weight: bold;
   text-transform: uppercase;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transition: background-color 0.3s ease-in-out;
@@ -97,10 +119,9 @@ button {
 button:hover {
   background-color: white;
   color: #FF474C;
-  text-transform: uppercase;
   font-weight: bold;
+  border-radius: 10px;
   font-size: 1rem;
-  border-radius: 0px;
 }
 
 @media (max-width: 768px) {
