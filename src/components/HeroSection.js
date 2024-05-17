@@ -35,7 +35,7 @@ const HeroSection = () => {
           <div className="location-weather">
             {weather && (
               <p>
-                Based in {weather.name}, {weather.weather[0].description} <img src={`https://openweathermap.org/img/w/${weather.weather[0].icon}.png`} alt="weather icon" />. {Math.round(weather.main.temp)}°C
+                Based in {weather.name}, {weather.weather[0].description} <img src={`https://openweathermap.org/img/w/${weather.weather[0].icon}.png`} alt="weather icon" /> {Math.round(weather.main.temp)}°C
               </p>
             )}
           </div>
