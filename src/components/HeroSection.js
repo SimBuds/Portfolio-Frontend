@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { FaCheckCircle } from 'react-icons/fa';
 import heroImage from '../assets/images/hero-image.jpg';
+import { Link } from 'react-router-dom';
 import '../assets/HeroSection.css';
 
 const HeroSection = () => {
@@ -44,6 +45,7 @@ const HeroSection = () => {
               <FaCheckCircle style={{ color: 'green' }} /> Available for work from 2024 onwards
             </p>
           </div>
+          <Link to="/projectlist" className="btn btn-outline-light">View Projects</Link>
         </div>
         <div className="col-md-6 hero-image">
           <img src={heroImage} alt="Casey Hsu" className="img-fluid"/>

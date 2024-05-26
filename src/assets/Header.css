@@ -53,19 +53,18 @@
   font-weight: bold;
   font-size: 1rem;
   flex-grow: 1;
-  margin-left: 7rem;
 }
 
 .navbar-right {
   display: flex;
   align-items: center;
-  margin-right: 1.5rem;
+  margin-right: 1rem;
 }
 
 .navbar-social {
   display: flex;
   align-items: center;
-  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .nav-item {
@@ -161,7 +160,6 @@
 
   .navbar-center {
     margin-bottom: 1rem;
-    padding-right: 13.5rem;
   }
 
   .navbar-social {
@@ -183,7 +181,5 @@
   .btn.btn-outline-light {
     padding: 8px 20px;
     font-size: 0.9rem;
-    width: 40%;
-    margin: 0 auto;
   }
 }

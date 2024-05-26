@@ -26,6 +26,9 @@ const Header = () => {
               <HashLink smooth to="/#projects" className="nav-link">Showcase</HashLink>
             </Nav.Item>
             <Nav.Item>
+              <HashLink smooth to="/projectlist" className="nav-link">Projects</HashLink>
+            </Nav.Item>
+            <Nav.Item>
               <a href={`${process.env.PUBLIC_URL}/resume.pdf`} className="nav-link">Resume</a>
             </Nav.Item>
             <Nav.Item>

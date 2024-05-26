@@ -4,7 +4,6 @@ import project1Image from '../assets/images/project1.png';
 import project2Image from '../assets/images/project2.png';
 import project3Image from '../assets/images/project3.png';
 import project4Image from '../assets/images/project4.png';
-import project5Image from '../assets/images/project5.png';
 
 const projects = [
   {
@@ -12,35 +11,28 @@ const projects = [
     image: project1Image,
     description: 'This cross-platform web-based application is designed to streamline restaurant operations, from managing ingredient inventory and menu items to employee scheduling and more.',
     tags: ['React', 'Rust', 'MongoDB', 'Rocket'],
-    link: 'https://github.com/SimBuds/menu-master-web'
+    link: 'https://github.com/SimBuds/Menu-Master-Web'
   },
   {
-    name: 'Gran Turismo 7 Race Tracker',
+    name: 'Weather App with React',
     image: project2Image,
-    description: 'Start your engines! Using Python, this companion desktop application was created to help gamers track their laps in Gran Turismo 7. The player can select their desired racing map to record their best lap times and compare against other players on the leaderboard.',
-    tags: ['Python', 'Flask', 'SQLite'],
-    link: 'https://github.com/SimBuds/GT7-Racing-Program'
+    description: 'Stay updated with the latest weather information! This React application fetches real-time weather data using the OpenWeatherMap API and displays it in a user-friendly interface.',
+    tags: ['React', 'Axios', 'OpenWeatherMap API'],
+    link: 'https://github.com/SimBuds/Weather-App-React'
   },
   {
-    name: 'Tic-Tac-Toe AI MiniMax',
+    name: 'SpaceX Launch Tracker with Angular',
     image: project3Image,
-    description: 'Want to play? Grab a friend for a round of Tic-Tac-Toe, or challenge our AI! Built with JavaFX and powered by the Minimax algorithm, our AI will keep you on your toes.',
-    tags: ['Java', 'AI', 'JavaFX', 'Minimax'],
-    link: 'https://github.com/SimBuds/TicTacToe-MiniMax'
+    description: 'Blast off with this Angular application! Users can view upcoming SpaceX launches, as well as details about past launches, all fetched from the SpaceX API.',
+    tags: ['Angular', 'SpaceX API', 'Bootstrap'],
+    link: 'https://github.com/SimBuds/SpaceX-Angular'
   },
   {
-    name: 'JavaFX Programming Quiz Game',
+    name: 'Employee-Management-System-MERN',
     image: project4Image,
-    description: 'This JavaFX application delivers an engaging quiz experience. Users can take quizzes, view their scores, and check the current leaderboard, all stored and managed through a text file.',
-    tags: ['JavaFX', 'CRUD', 'Java'],
-    link: 'https://github.com/SimBuds/JavaFX-CRUD-Quiz-Game'
-  },
-  {
-    name: 'Airport Flight System Application',
-    image: project5Image,
-    description: 'Ready for take-off? Using C# and Object-Oriented Programming (OOP), this flight management system allows you to book, view and cancel your flights. Additionally, it uses CRUD operations for efficient user and flight data management.',
-    tags: ['C#', 'ASP.NET', 'Data Structures', 'CRUD'],
-    link: 'https://github.com/SimBuds/Flight-System-Using-CRUD-and-C-'
+    description: 'This MERN stack application allows users to manage employees, departments, and roles within a company. It features a user-friendly interface and a secure login system for easy access to employee data.',
+    tags: ['React', 'Node.js', 'Express', 'MongoDB'],
+    link: 'https://github.com/SimBuds/Employee-Management-System-MERN'
   }
 ];
 

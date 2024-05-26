@@ -1,0 +1,169 @@
+/* ProjectList.css */
+
+.project-list-wrapper {
+  width: 100%;
+  padding: 40px;
+  background: #121212;
+  color: #FFF;
+}
+
+.project-list-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project-list-header h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.project-list-header h2::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #FF474C;
+  margin: 20px auto;
+}
+
+.project-list-header p {
+  padding-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.project-list-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-list-card:hover {
+  transform: translateY(-10px);
+}
+
+.project-list-image {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project-list-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-list-image img:hover {
+  transform: scale(1.05);
+}
+
+.project-list-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.project-list-content h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #47FFFA;
+  transition: color 0.3s ease-in-out;
+  margin-bottom: 15px;
+}
+
+.project-list-content h3:hover {
+  color: #FF474C;
+}
+
+.project-list-content p {
+  margin: 10px 0;
+  padding: 0 20px;
+  font-size: 1.1rem;
+}
+
+.project-list-technologies {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+  padding: 0 20px;
+}
+
+.project-list-tag {
+  background-color: #666;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.project-list-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FF474C;
+  color: #121212;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.project-list-link:hover {
+  background-color: #FFFFFF;
+  color: #FF474C;
+}
+
+@media (max-width: 768px) {
+  .project-list-wrapper {
+    padding: 20px;
+  }
+
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  .project-list-card {
+    padding: 10px;
+  }
+
+  .project-list-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-list-content p {
+    font-size: 1rem;
+  }
+
+  .project-list-technologies {
+    padding: 0 10px;
+  }
+
+  .project-list-link {
+    padding: 8px 16px;
+  }
+}
