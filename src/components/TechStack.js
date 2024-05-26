@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  siHtml5, siCss3, siJavascript, siNextdotjs, siMysql, siMongodb, siPostgresql,
+  siHtml5, siCss3, siJavascript, siExpress, siMysql, siMongodb, siPostgresql,
   siLinux, siApple, siWindows, siReact, siAngular, siDocker, siPostman, siGit
 } from 'simple-icons/icons';
 import '../assets/TechStack.css';
@@ -24,7 +24,7 @@ const techCategories = {
   "Frameworks": [
     { name: 'React', color: '#61DAFB', icon: siReact },
     { name: 'Angular', color: '#DD0031', icon: siAngular },
-    { name: 'Next.js', color: '#ffffff', icon: siNextdotjs },
+    { name: 'Express', color: '#FFFFFF', icon: siExpress },
   ],
   "Tools": [
     { name: 'Docker', color: '#2496ED', icon: siDocker },

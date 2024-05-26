@@ -53,6 +53,7 @@
   font-weight: bold;
   font-size: 1rem;
   flex-grow: 1;
+  margin-left: 4rem;
 }
 
 .navbar-right {
@@ -115,7 +116,7 @@
   }
 
   .navbar-brand {
-    margin-left: 20px;
+    margin-left: 15px;
     flex-direction: row;
     align-items: center;
   }
@@ -133,7 +134,7 @@
   .navbar-toggler {
     position: static;
     padding: 0.25rem 0.5rem;
-    margin-right: 10px;
+    margin-right: 5px;
   }
 
   .navbar-toggler-icon {
@@ -160,10 +161,12 @@
 
   .navbar-center {
     margin-bottom: 1rem;
+    margin-left: 0;
   }
 
   .navbar-social {
     margin-bottom: 1rem;
+    margin-left: 1rem;
   }
 
   .nav-item {
@@ -180,6 +183,5 @@
 
   .btn.btn-outline-light {
     padding: 8px 20px;
-    font-size: 0.9rem;
   }
 }

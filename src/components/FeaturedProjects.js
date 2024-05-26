@@ -10,36 +10,36 @@ const projects = [
     name: 'Menu Master Restaurant Management System',
     image: project1Image,
     description: 'This cross-platform web-based application is designed to streamline restaurant operations, from managing ingredient inventory and menu items to employee scheduling and more.',
-    tags: ['React', 'Rust', 'MongoDB', 'Rocket'],
+    tags: ['React', 'MongoDB', 'Rust', 'Rocket'],
     link: 'https://github.com/SimBuds/Menu-Master-Web'
   },
   {
     name: 'Weather App with React',
     image: project2Image,
     description: 'Stay updated with the latest weather information! This React application fetches real-time weather data using the OpenWeatherMap API and displays it in a user-friendly interface.',
-    tags: ['React', 'Axios', 'OpenWeatherMap API'],
+    tags: ['React', 'Axios', 'OpenWeatherMap API', 'Vercel'],
     link: 'https://github.com/SimBuds/Weather-App-React'
   },
   {
     name: 'SpaceX Launch Tracker with Angular',
     image: project3Image,
     description: 'Blast off with this Angular application! Users can view upcoming SpaceX launches, as well as details about past launches, all fetched from the SpaceX API.',
-    tags: ['Angular', 'SpaceX API', 'Bootstrap'],
+    tags: ['Angular','Bootstrap', 'SpaceX API', 'Render'],
     link: 'https://github.com/SimBuds/SpaceX-Angular'
   },
   {
     name: 'Employee-Management-System-MERN',
     image: project4Image,
     description: 'This MERN stack application allows users to manage employees, departments, and roles within a company. It features a user-friendly interface and a secure login system for easy access to employee data.',
-    tags: ['React', 'Node.js', 'Express', 'MongoDB'],
+    tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Docker'],
     link: 'https://github.com/SimBuds/Employee-Management-System-MERN'
   }
 ];
 
 const FeaturedProjects = () => {
   return (
-    <div className="featured-projects-wrapper" id="projects">
-      <div className="project-header">
+    <div className="featured-projects-wrapper">
+      <div className="project-header" id="projects">
         <h2>FEATURED PROJECTS</h2>
         <p>Explore my portfolio, showcasing some of my most intriguing and innovative projects.</p>
       </div>

@@ -73,7 +73,7 @@ const ProjectList = () => {
     <div className="project-list-wrapper">
       <div className="project-list-header">
         <h2>ALL PROJECTS</h2>
-        <p>Here is a comprehensive list of all my projects. Feel free to explore and see what I have been working on.</p>
+        <p>Here you can find the list of all my projects. Feel free to explore and see what I have been working on.</p>
       </div>
       <div className="project-list">
         {projects.map((project, index) => (
