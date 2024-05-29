@@ -27,7 +27,7 @@ const PoweredBy = () => {
           </div>
           <div className="icon">
             <SiDigitalocean />
-            <p>OceanGate</p>
+            <p>DigitalOcean</p>
           </div>
         </div>
       </div>
