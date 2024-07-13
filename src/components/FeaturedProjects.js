@@ -1,9 +1,9 @@
 import React from 'react';
 import '../assets/FeaturedProjects.css';
 import project1Image from '../assets/images/project1.png';
-import project2Image from '../assets/images/project2.png';
+import project7Image from '../assets/images/project7.png';
 import project3Image from '../assets/images/project3.png';
-import project4Image from '../assets/images/project4.png';
+import project5Image from '../assets/images/project5.png';
 
 const projects = [
   {
@@ -14,11 +14,11 @@ const projects = [
     link: 'https://github.com/SimBuds/Menu-Master-Web'
   },
   {
-    name: 'Weather App with React',
-    image: project2Image,
-    description: 'Stay updated with the latest weather information! This React application fetches real-time weather data using the OpenWeatherMap API and displays it in a user-friendly interface.',
-    tags: ['React', 'Axios', 'OpenWeatherMap API', 'Vercel'],
-    link: 'https://github.com/SimBuds/Weather-App-React'
+    name: 'Tic-Tac-Toe AI MiniMax',
+    image: project7Image,
+    description: 'Want to play? Grab a friend for a round of Tic-Tac-Toe, or challenge our AI! Built with JavaFX and powered by the Minimax algorithm, our AI will keep you on your toes.',
+    tags: ['Java', 'AI', 'JavaFX', 'Minimax'],
+    link: 'https://github.com/SimBuds/TicTacToe-MiniMax'
   },
   {
     name: 'SpaceX Launch Tracker with Angular',
@@ -28,12 +28,12 @@ const projects = [
     link: 'https://github.com/SimBuds/SpaceX-Angular'
   },
   {
-    name: 'Employee-Management-System-MERN',
-    image: project4Image,
-    description: 'This MERN stack application allows users to manage employees, departments, and roles within a company. It features a user-friendly interface and a secure login system for easy access to employee data.',
-    tags: ['React', 'Node.js', 'Express', 'MongoDB', 'Docker'],
-    link: 'https://github.com/SimBuds/Employee-Management-System-MERN'
-  }
+    name: 'Airport Flight System Application',
+    image: project5Image,
+    description: 'Ready for take-off? Using C# and Object-Oriented Programming (OOP), this flight management system allows you to book, view and cancel your flights. Additionally, it uses CRUD operations for efficient user and flight data management.',
+    tags: ['C#', 'ASP.NET', 'Data Structures', 'CRUD'],
+    link: 'https://github.com/SimBuds/Flight-System-Using-CRUD-and-C-'
+  },
 ];
 
 const FeaturedProjects = () => {

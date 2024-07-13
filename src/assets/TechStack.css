@@ -89,18 +89,18 @@
   .category-row {
     flex-direction: column;
     align-items: center;
-    margin-bottom: 10px; /* Reduced margin-bottom for less space between rows */
+    margin-bottom: 5px; /* Reduced margin-bottom for less space between rows */
   }
 
   .category {
-    margin-bottom: 10px; /* Reduced margin-bottom for less space between categories */
+    margin-bottom: 5px; /* Reduced margin-bottom for less space between categories */
   }
 
   .tech-item {
     width: 80px; /* Adjust width for better fit on mobile */
     height: 80px; /* Adjust height for better fit on mobile */
-    padding: 15px; /* Adjust padding for better spacing */
-    margin: 10px; /* Add margin for spacing around tech items */
+    padding: 10px; /* Adjust padding for better spacing */
+    margin: 5px; /* Add margin for spacing around tech items */
   }
 
   .tech-item svg {
