@@ -20,7 +20,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="footer-text">
-                    <p>© 2024 Casey Hsu. All rights reserved.</p>
+                    <p>© 2025 Casey Hsu. All rights reserved.</p>
                 </div>
             </Container>
         </footer>
