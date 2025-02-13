@@ -42,7 +42,7 @@ const HeroSection = () => {
           </div>
           <div className="availability">
             <p>
-              <FaCheckCircle style={{ color: 'green' }} /> Available for work from 2024 onwards
+              <FaCheckCircle style={{ color: 'green' }} /> Available for work from 2025 onwards
             </p>
           </div>
           <Link to="/projectlist" className="btn btn-outline-light">View Projects</Link>
